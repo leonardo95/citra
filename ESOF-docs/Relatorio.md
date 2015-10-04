@@ -5,35 +5,35 @@
 ===============
 **[Citra](http://citra-emu.org/)** é um emulador/debugger, em fase de desenvolvimento, da consola Nintendo 3DS escrito em C++.
 
-No seu estado atual é maioritariamente usado para executar *homebrews*(aplicações criadas/alteradas pelos próprios utilizadores), visto que a sua capacidade de correr jogos comerciais ainda se encontra pouco evoluída.
+No seu estado atual é maioritariamente usado para executar *homebrews* (aplicações criadas/alteradas pelos próprios utilizadores), visto que a sua capacidade de correr jogos comerciais ainda se encontra pouco evoluída.
 
 **Contribuidores:**
 
-O projeto citra-emulator é conduzido por cerca de 47 utilizadores que contribuem para o desenvolvimento do mesmo, no entanto, apenas alguns, neste caso 4 membros, mostram uma grande influencia no que toca a esforço e planeamento das tarefas.
+O projeto citra-emulator é conduzido por cerca de 47 utilizadores que contribuem para o desenvolvimento do mesmo, no entanto, apenas alguns, neste caso 4 membros, mostram uma grande influencia no que toca a esforço e planeamento das tarefas.**
 
-Principais membros:
+Principais membros**:**
 
-Nota: Tendo em conta que a informação relativa a cada membro do projeto era muito limitada não foi possível obter uma analise precisa sobre cada um.
+Nota**: Tendo em conta que a informação relativa a cada membro do projeto era muito limitada não foi possível obter uma analise precisa sobre cada um.
 
-¦ Bunnei – Neste momento pode-se dizer que foi aquele que mais contribui para o projeto. Apresenta cerca de 608 commits.
+¦ **Bunnei** – Neste momento pode-se dizer que foi aquele que mais contribui para o projeto. Apresenta cerca de 608 commits.
 
 Contribui para o desenvolvimento do debbuger do emulador 3DS, para o site do [citra](http://citra-emu.org/), para alguns programas uteis para a 3DS homebrew entre muitas outras componentes.
 
 Para além de estar envolvido envolvido no projeto citra também participa no projeto dolphin (emulador Wii/GameCube);
 
-¦ Lioncash – Contribui com 325 commits e vive no canada.
+¦ **Lioncash** – Contribui com 325 commits e vive no canada.
 
 Contribui para o aperfeiçoamento do debbuger do emulador 3DS e para outras configurações do sistema para Windows.
 
 Está envolvido em projetos como  LiveSplit (programa que ajuda os corredores a controlar os momentos da corrida com recurso ao Timer);
 
-¦ Yuri Kunde Schlesner – Mais conhecido como yuriks, participou com 312 commits e vive no Brasil.
+¦ **Yuri Kunde Schlesner** – Mais conhecido como yuriks, participou com 312 commits e vive no Brasil.
 
 Contribui para o aperfeiçoamento do debbuger do emulador 3DS, de várias bibliotecas importantes para o funcionamento do citra e para outros utilitários do citra.
 
 Está envolvido em projetos como Ctrulib (biblioteca que ajuda a criar uma interface eficiente com o sistema 3DS) and GBA Emulator (emulador que corre jogos do game boy advance);
 
-¦ Tony Wasserka – Conhecido como neobrain, contribuiu com 211 commits.
+¦ **Tony Wasserka** – Conhecido como neobrain, contribuiu com 211 commits.
 
 Tal como o membro bunnei, este presente no desenvolvimento do debbuger do emulador 3DS assim como no aperfeiçoamento do site do citra.
 

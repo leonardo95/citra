@@ -19,19 +19,19 @@ Nota: Tendo em conta que a informação relativa a cada membro do projeto era muit
 
 Contribui para o desenvolvimento do debbuger do emulador 3DS, para o site do [citra](http://citra-emu.org/), para alguns programas uteis para a 3DS homebrew entre muitas outras componentes.
 
-Para além de estar envolvido envolvido no projeto citra também participa no projeto dolphin (emulador Wii/GameCube);
+Para além de estar envolvido envolvido no projeto citra também participa no projeto *dolphin* (emulador Wii/GameCube);
 
 ¦ **Lioncash** – Contribui com 325 commits e vive no canada.
 
 Contribui para o aperfeiçoamento do debbuger do emulador 3DS e para outras configurações do sistema para Windows.
 
-Está envolvido em projetos como  LiveSplit (programa que ajuda os corredores a controlar os momentos da corrida com recurso ao Timer);
+Está envolvido em projetos como  *LiveSplit* (programa que ajuda os corredores a controlar os momentos da corrida com recurso ao Timer);
 
 ¦ **Yuri Kunde Schlesner** – Mais conhecido como yuriks, participou com 312 commits e vive no Brasil.
 
 Contribui para o aperfeiçoamento do debbuger do emulador 3DS, de várias bibliotecas importantes para o funcionamento do citra e para outros utilitários do citra.
 
-Está envolvido em projetos como Ctrulib (biblioteca que ajuda a criar uma interface eficiente com o sistema 3DS) and GBA Emulator (emulador que corre jogos do game boy advance);
+Está envolvido em projetos como *Ctrulib* (biblioteca que ajuda a criar uma interface eficiente com o sistema 3DS) and *GBA Emulator* (emulador que corre jogos do game boy advance);
 
 ¦ **Tony Wasserka** – Conhecido como neobrain, contribuiu com 211 commits.
 
@@ -40,9 +40,9 @@ Tal como o membro bunnei, este tambem esta presente no desenvolvimento do debbug
 Para novos contribuidores que possam vir a mostrar-se interessados estão organizados ficheiros no repositório com regras para organizar melhor o código, tal como uma lista ToDo que está a ser constantemente atualizada.
 
 No que toca a ferramentas para ajudar no desenvolvimento do projeto são utilizadas, entre outras:
-- devkitARM(Toolchain para compilar homebrew)
-- CTR User Library (Biblioteca para escrever código for writing usermode arm11 code for the 3DS)
-- picasso and nihstro (Assemblers para código de shaders para o GPU PICA200 utilizado na 3DS)
+- **devkitARM**(Toolchain para compilar homebrew)
+- **CTR User Library** (Biblioteca para escrever código for writing usermode arm11 code for the 3DS)
+- **picasso and nihstro** (Assemblers para código de shaders para o GPU PICA200 utilizado na 3DS)
 
 O projeto está licenciado pela [licença GPLv2](https://github.com/citra-emu/citra/blob/master/license.txt).
 

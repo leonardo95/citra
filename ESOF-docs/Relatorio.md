@@ -54,7 +54,7 @@ O projeto está licenciado pela [licença GPLv2](https://github.com/citra-emu/citr
 
 "The project can reasonably be divided in several "modules", and while many people work on most parts of the code at some point or another, we usually communicate to avoid making large changes in the same pats of the code at the same time, in order to avoid merge conflicts later."
 
-								Yuriks, em email recebido.
+Yuriks, em email recebido.
 
 ¦ **Code and Fix** – Este processo, por sua vez, visa uma programação imediata por parte dos contribuidores e um tratamento posterior aquando da existência de erros. Também conhecido como "Comboy coding", basea-se numa programação sem um design planeado, que visa a otimização do projeto através de uma futura correção de eventuais bugs.
 

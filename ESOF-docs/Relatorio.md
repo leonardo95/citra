@@ -9,9 +9,9 @@ No seu estado atual é maioritariamente usado para executar *homebrews* (aplicaçõ
 
 **Contribuidores:**
 
-O projeto citra-emulator é conduzido por cerca de 47 utilizadores que contribuem para o desenvolvimento do mesmo, no entanto, apenas alguns, neste caso 4 membros, mostram uma grande influencia no que toca a esforço e planeamento das tarefas.**
+O projeto citra-emulator é conduzido por cerca de 47 utilizadores que contribuem para o desenvolvimento do mesmo, no entanto, apenas alguns, neste caso 4 membros, mostram uma grande influencia no que toca a esforço e planeamento das tarefas.##
 
-Principais membros**: **
+Principais membros##: **
 
 Nota**: Tendo em conta que a informação relativa a cada membro do projeto era muito limitada não foi possível obter uma analise precisa sobre cada um.
 

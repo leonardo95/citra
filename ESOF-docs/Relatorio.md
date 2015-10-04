@@ -1,5 +1,3 @@
-Relatorio realizado pelo **grupo C** da turma 4.
-
 
 
 **Descrição do Projeto**
@@ -71,3 +69,5 @@ O processo **Software Prototyping**, que se baseia na criação de uma versão inic
 
 Primeiramente, verificamos que os contribuidores foram algo desleixados com a utilização de processos bem definidos, pelo que o seu rendimento não foi máximo. Todavia, aquando de uma espécie de introspeção, quando o trabalho foi dividido em diferentes módulos o rendimento aumenta visto que, havendo uma boa comunicação e uma boa reflexão entre contribuidores, a divisão levou a um esclarecimento do papel que cada contribuidor tem no projeto.
 Assim sendo, e analisando tudo o que foi realizado até agora no projeto, podemos concluir que um planeamento prévio das tarefas a desempenhar assim como dos processos a utilizar são bastante importantes no desenvolvimento de um trabalho, pois sem estes não há uma estrutura a seguir, e sem essa estrutura o desenvolvimento do projeto não pode ser otimizado.  	
+Relatorio realizado pelo **grupo C** da turma 4.
+

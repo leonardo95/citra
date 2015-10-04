@@ -5,13 +5,15 @@
 ===============
 **[Citra](http://citra-emu.org/)** é um emulador/debugger, em fase de desenvolvimento, da consola Nintendo 3DS escrito em C++.
 
-No seu estado atual é maioritariamente usado para executar *homebrews* (aplicações criadas/alteradas pelos próprios utilizadores), visto que a sua capacidade de correr jogos comerciais ainda se encontra pouco evoluída.
+No seu estado atual é maioritariamente usado para executar *homebrews*(aplicações criadas/alteradas pelos próprios utilizadores), visto que a sua capacidade de correr jogos comerciais ainda se encontra pouco evoluída.
 
 **Contribuidores:**
 
-O projeto citra-emulator é conduzido por cerca de 47 utilizadores que contribuem para o desenvolvimento do mesmo, no entanto, apenas alguns, neste caso 4 membros, mostram uma grande influencia no que toca a esforço e planeamento das tarefas.Principais membros:**
+O projeto citra-emulator é conduzido por cerca de 47 utilizadores que contribuem para o desenvolvimento do mesmo, no entanto, apenas alguns, neste caso 4 membros, mostram uma grande influencia no que toca a esforço e planeamento das tarefas.
 
-Nota:** Tendo em conta que a informação relativa a cada membro do projeto era muito limitada não foi possível obter uma analise precisa sobre cada um.
+Principais membros:
+
+Nota: Tendo em conta que a informação relativa a cada membro do projeto era muito limitada não foi possível obter uma analise precisa sobre cada um.
 
 ¦ **Bunnei** – Neste momento pode-se dizer que foi aquele que mais contribui para o projeto. Apresenta cerca de 608 commits.
 
@@ -43,7 +45,6 @@ No que toca a ferramentas para ajudar no desenvolvimento do projeto são utilizad
 - picasso and nihstro (Assemblers para código de shaders para o GPU PICA200 utilizado na 3DS)
 
 O projeto está licenciado pela [licença GPLv2](https://github.com/citra-emu/citra/blob/master/license.txt).
-
 
 **Descrição dos Processos**
 ===============

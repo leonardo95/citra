@@ -30,7 +30,7 @@ Está envolvido em projetos como  *LiveSplit* (programa que ajuda os corredores a
 
 Contribui para o aperfeiçoamento do debbuger do emulador 3DS, de várias bibliotecas importantes para o funcionamento do citra e para outros utilitários do citra.
 
-Está envolvido em projetos como *Ctrulib* (biblioteca que ajuda a criar uma interface eficiente com o sistema 3DS) and *GBA Emulator* (emulador que corre jogos do game boy advance);
+Está envolvido em projetos como *Ctrulib* (biblioteca que ajuda a criar uma interface eficiente com o sistema 3DS) e *GBA Emulator* (emulador que corre jogos do game boy advance);
 
 ¦ **Tony Wasserka** – Conhecido como neobrain, contribuiu com 211 commits.
 

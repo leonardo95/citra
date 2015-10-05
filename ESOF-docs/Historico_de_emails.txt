@@ -54,3 +54,30 @@ No problem
 --yuriks
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+05/10/2015
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hello Mr. Schlesner,
+
+I have another question, how do the contributors know if a module is done? What kind of tests do you run to fully evaluate a module that you think is functional/well coded? And finally, what are the main priorities right now?
+
+Thank you again for your time,
+Luís Duarte
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+There's no real measure of "done", Citra is in constant evolution. When implementing a feature, usually hwtests (small standalone program demoing some hardware or OS feature) are ran and should have matching output on the console and emulator. For software features developed with heavy code RE aid I usually skip tests and just assume my implementation is correct since I used an authoritative reference.
+ 
+Main project priorities right now (even though development is a bit slow) is improving speed and compatbility. There's no roadmap, but steps to achieve these include a smarter hardware rendering implementation that avoids synchronizing the GPU with the CPU frequently, a JIT recompiler for the ARM core and implementation of missing GPU and OS features.
+ 
+--yuriks
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Again, thank you for your time.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,56 @@
+Historico de emails
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+03/10/2015
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hello,
+
+I am sending you this email because we would like to know, since you are one of the main contribuitors to the citra github project, which software processes were used in the development of said project.
+
+Thank you for your time,
+Luís Duarte.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hey,
+ 
+What do you mean with "software processes"?
+ 
+--yuriks
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hello,
+
+By software processes I mean the structed set of activities required to develop the software system. For example, the waterfall model states that a phase has to be complete before moving onto the next project phase it results in an inflexible partitioning of the projects distinct stages.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Citra is developed organically, there's no formal methodology used. We require all changes to come through as Pull Requests that are reviewed by maintainers (and possibly go through several address-review cycles) before merging, but that's it.
+ 
+--yuriks
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hello,
+
+One last question, do all contribuitors tend to work in the same part of the project simultaneously or do they work in separated parts that result in a final product?
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The project can reasonably be divided in several "modules", and while many people work on most parts of the code at some point or another, we usually communicate to avoid making large changes in the same pats of the code at the same time, in order to avoid merge conflicts later.
+ 
+--yuriks
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Thank you for your time.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+No problem
+ 
+--yuriks
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------

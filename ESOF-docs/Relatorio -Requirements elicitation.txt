@@ -1,3 +1,7 @@
 Quais os sistemas operativos suportados?
 
 O projeto de GitHub Citra é suportado e testado para versões de 64-bits do Windows ( Windows7 e mais recentes), Linux e OS X. O projeto pode ainda funcionar noutras plataformas, no entanto estas não estão a ser testadas pelos contribuidores do Citra.
+
+O que são os requerimentos de hardware?
+
+Não existem requerimentos específicos de hardware para o Citra - qualquer sistema x86-64 deve ser capaz de o correr sem problemas. Atualmente, o Citra inclui apenas um interpretador de núcleo de CPU bastante lento, logo a performance não será ótima independentemente do sistema utilizado. Os requerimentos gráficos são modestos mas os drivers de video devem suportar OpenGL 3.3.

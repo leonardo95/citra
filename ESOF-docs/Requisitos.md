@@ -6,8 +6,15 @@
 
 
 ###Requisitos - Utilizador
-
+<br><br>
+For running Citra builds, make sure to have icudt53.dll, icuin53.dll, icuuc53.dll, Qt5Core.dll, Qt5Gui.dll, Qt5OpenGL.dll and Qt5Widgets.dll in either the application directory or in the system PATH. If not there those files are in C:\Qt\5.4\msvc2013_64_opengl\bin,copy them here.Else, Citra will fail on startup. 
+<br>
 ![Alt text](https://camo.githubusercontent.com/db196e10c09f525329b84530a756f682a4e5e117/687474703a2f2f692e696d6775722e636f6d2f323157536a49332e706e673f31) 
+<br>
+Also, make sure platforms/qwindows.dll in the application directory. If not there you will find it in C:\Qt\5.4\msvc2013_64_opengl\plugins\platforms by default. Just copy it.
+<br>
+![Alt text](https://camo.githubusercontent.com/9b3d650ceca1c2f1167d0e9d73c68c3253c2e7e4/687474703a2f2f692e696d6775722e636f6d2f666f4e78646d392e706e673f31)
+
 #####Quais os sistemas operativos suportados?
 O projeto de GitHub Citra é suportado e testado para versões de 64-bits do Windows ( Windows7 e mais recentes), Linux e OS X. O projeto pode ainda funcionar noutras plataformas, no entanto estas não estão a ser testadas pelos contribuidores do Citra.
 

@@ -15,7 +15,9 @@
 ![Alt text](https://camo.githubusercontent.com/9b3d650ceca1c2f1167d0e9d73c68c3253c2e7e4/687474703a2f2f692e696d6775722e636f6d2f666f4e78646d392e706e673f31)
 
 > **Atention to all the users**, currently no retail games/software are fully playable on Citra. The few games that do run are slow and can suffer from glitches or bugs. Sooner or later, games will come to playable state.
-<br>
+
+===============
+
 
 #####Quais os sistemas operativos suportados?
 O projeto de GitHub Citra é suportado e testado para versões de 64-bits do Windows ( Windows7 e mais recentes), Linux e OS X. O projeto pode ainda funcionar noutras plataformas, no entanto estas não estão a ser testadas pelos contribuidores do Citra.

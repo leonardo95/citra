@@ -1,3 +1,4 @@
+
 #Requisitos
 
 ===============
@@ -12,6 +13,7 @@
 ![Alt text](https://camo.githubusercontent.com/9b3d650ceca1c2f1167d0e9d73c68c3253c2e7e4/687474703a2f2f692e696d6775722e636f6d2f666f4e78646d392e706e673f31)
 <br> 
  - QT 5.3 is known to fail in Windows building citra. Install QT 5.3.1 or greater for the result.
+
 > **Atention to all the users**, currently no retail games/software are fully playable on Citra. The few games that do run are slow and can suffer from glitches or bugs. Sooner or later, games will come to playable state.
 
 ===============

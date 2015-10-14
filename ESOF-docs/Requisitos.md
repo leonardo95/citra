@@ -7,9 +7,7 @@
 
 ###Requisitos - Utilizador
 
-Reference-style: 
-![alt text][logo]
-[logo]: https://github.com/leonardo95/citra/tree/master/ESOF-docs/user_atention.png "Atention to users"
+https://camo.githubusercontent.com/db196e10c09f525329b84530a756f682a4e5e117/687474703a2f2f692e696d6775722e636f6d2f323157536a49332e706e673f31
 
 #####Quais os sistemas operativos suportados?
 O projeto de GitHub Citra é suportado e testado para versões de 64-bits do Windows ( Windows7 e mais recentes), Linux e OS X. O projeto pode ainda funcionar noutras plataformas, no entanto estas não estão a ser testadas pelos contribuidores do Citra.

@@ -6,6 +6,9 @@
 
 
 ###Requisitos - Utilizador
+
+Reference-style: 
+![alt text][logo]
 [logo]: https://github.com/leonardo95/citra/tree/master/ESOF-docs/user_atention.png "Atention to users"
 
 #####Quais os sistemas operativos suportados?

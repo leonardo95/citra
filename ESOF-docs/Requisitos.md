@@ -1,6 +1,6 @@
 
 #Requisitos
-===============
+
 Verificamos que no projeto em análise os "developers" podem ter duas funções principais no desenvolver no projeto, corrigir os erros que os módulos apresentam ou, por outro lado, tentar implementar as funcionalidades da aplicação que se encontram em falta mediante os requisitos estabelecidos.
 Os requisitos são definidos inicialmente, porém muitos requisitos vão sendo adicionados a meio do projeto, sendo que estes precisam de uma "processo" bem estruturado para que se possa perceber se o novo requisito é pertinente e benéfico para o desenvolvimento do projeto.
 

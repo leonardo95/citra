@@ -37,14 +37,18 @@ Em conversa com um dos contribuidores principais do grupo ([Yuri Kunde Schlesner
 ####**Requisitos para "build" do projeto**
 
 - De modo a realizar "build" ao projeto, os utilizadores devem garantir que incluiram icudt53.dll, icuin53.dll, icuuc53.dll, Qt5Core.dll, Qt5Gui.dll, Qt5OpenGL.dll and Qt5Widgets.dll no diretório da aplicação, no "system path" ou em C:\Qt\5.4\msvc2013_64_opengl\bin. Caso contrário, o Citra não irá compilar, falhando a sua inicialização. 
+
 <br>
 ![Alt text](https://camo.githubusercontent.com/db196e10c09f525329b84530a756f682a4e5e117/687474703a2f2f692e696d6775722e636f6d2f323157536a49332e706e673f31) 
 <br>
- - O utilizador deve ainda manter platforms/qwindows.dll no diretório do ficheiro, ou em C:\Qt\5.4\msvc2013_64_opengl\plugins\platforms.
+
+ O utilizador deve ainda manter platforms/qwindows.dll no diretório do ficheiro, ou em C:\Qt\5.4\msvc2013_64_opengl\plugins\platforms.
+
 <br>
 ![Alt text](https://camo.githubusercontent.com/9b3d650ceca1c2f1167d0e9d73c68c3253c2e7e4/687474703a2f2f692e696d6775722e636f6d2f666f4e78646d392e706e673f31)
 <br> 
- - QT 5.3 é uma falha usual no  Windows aquando do "build" do projeto. O utilizador deve instalar QT 5.3.1 (ou uma versão mais recente), de modo a corrigir este erro.
+
+QT 5.3 é uma falha usual no  Windows aquando do "build" do projeto. O utilizador deve instalar QT 5.3.1 (ou uma versão mais recente), de modo a corrigir este erro.
 
 ===============
  

@@ -7,7 +7,7 @@ Os requisitos são definidos inicialmente, porém muitos requisitos vão sendo adic
 
 ###**Validação por parte do responsável do projeto**
 
-O projeto está dividido em módulos que são distribuidos pelos vários contribuidores. Cada um desses módulos foca-se numa característica que o projeto deve implementar, sendo que quando esse módulo está completo (bem implementado) passa por um processo de integração no projeto principal. Esse processo é gerido pelos contribuidores principais do projeto, [Yuri Kunde Schlesner](https://github.com/yuriks), e também [Bunnei](https://github.com/bunnei). Estes contribuidores têm como função testar os diferentes módulos, ou então delegar contribuidores para analisar os mesmos, contribuidores estes que normalmente são os que estão mais dentro do assunto que o módulo aborda. Finalmente, é feito o merge do código que se encontra no módulo para o projeto (Neste momento os principais contribuidores apresentam as principais tarefas dividas por diferentes graus de dificuldade numa lista disponivel no repositório).
+O projeto está dividido em módulos que são distribuidos pelos vários contribuidores. Cada um desses módulos foca-se numa característica que o projeto deve implementar, sendo que quando esse módulo está completo (bem implementado) passa por um processo de integração no projeto principal. Esse processo é gerido pelos contribuidores principais do projeto, [Yuri Kunde Schlesner](https://github.com/yuriks), e também [Bunnei](https://github.com/bunnei). Estes contribuidores têm como função testar os diferentes módulos, ou então delegar contribuidores para analisar os mesmos, contribuidores estes que normalmente são os que estão mais dentro do assunto que o módulo aborda. Finalmente, é feito o merge do código que se encontra no módulo para o projeto (Neste momento os principais contribuidores apresentam as principais tarefas divididas por diferentes graus de dificuldade numa lista disponivel no repositório).
 
 
 Em conversa com um dos contribuidores principais do grupo ([Yuri Kunde Schlesner](https://github.com/yuriks)) reunimos as respostas apresentadas seguidamente, para as questões que achamos pertinentes sobre requisitos para o projeto **[Citra](http://citra-emu.org/)**:
@@ -15,12 +15,12 @@ Em conversa com um dos contribuidores principais do grupo ([Yuri Kunde Schlesner
 ===============
 
 ####**Requerimentos de Software/Sistema:**
-- O projeto de GitHub Citra é suportado e testado para versões de 64-bits do Windows (Windows7 e mais recentes), Linux e OS X. O projeto pode ainda funcionar noutras plataformas, no entanto estas não estão a ser testadas pelos contribuidores do Citra.
+- O projeto de GitHub Citra é suportado e testado para versões de 64-bits do Windows (Windows7 e mais recentes), Linux e OS X. O projeto pode ainda funcionar noutras plataformas, no entanto estas não estão a ser testadas pelos contribuidores do Citra. Para além de um dos OS referidos é nescessário ter instalado o Microsoft's .NET 4.0 Client.
 
 ===============
 
 ####**Requerimentos de Hardware:**
-- Não existem requerimentos específicos de hardware para o Citra - qualquer sistema x86-64 deve ser capaz de o correr sem problemas. Atualmente, o Citra inclui apenas um interpretador de núcleo de CPU bastante lento, logo a performance não será ótima independentemente do sistema utilizado. Os requerimentos gráficos são modestos mas os drivers de video devem suportar OpenGL 3.3.
+- Não existem requerimentos específicos muito altos de hardware para o Citra - qualquer sistema x86-64 deve ser capaz de o correr sem problemas, desde que possua no minimo RAM de 1GB(32 bits) ou 2GB(64bits) e um CPU Intel® Core i3 ou maior. Atualmente, o Citra inclui apenas um interpretador de núcleo de CPU bastante lento, logo a performance não será ótima independentemente do sistema utilizado. Os requerimentos gráficos são modestos mas os drivers de video devem suportar OpenGL 3.3.
 
 ===============
 

@@ -18,4 +18,4 @@ Neste ponto pretende-se demonstrar os componentes de software e as dependencias 
 
 Os casos de utilização relacionam as restantes vistas, mostrando as relações entre os vários componentes do sistema.
 Nesta fase o projeto Citra, dado que ainda se encontra em desenvolvimento, apenas consegue fazer build e correr alguns jogos apresentando alguma lentidão e com algum flick.
-[Alt text](https://github.com/leonardo95/citra/tree/master/ESOF-docs/Resources/Use_case_view.PNG)
+[Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/Use_case_view.PNG)

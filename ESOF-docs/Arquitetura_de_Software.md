@@ -30,3 +30,7 @@ Nesta fase o projeto Citra, dado que ainda se encontra em desenvolvimento, apena
 <br>
 ![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/Use_case_view.PNG)
 <br>
+
+###**Notas adicionais**
+
+Durante a formulação deste relatório não obtivemos resposta a dúvidas colocadas aos colaboradores do projeto.

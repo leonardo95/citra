@@ -240,7 +240,7 @@ void GMainWindow::OnDisplayTitleBars(bool show)
 }
 
 void GMainWindow::BootGame(const std::string& filename) {
-    LOG_INFO(Frontend, "Citra starting...\n");
+    LOG_INFO(Frontend, "Citra starting...");
 
     // Shutdown previous session if the emu thread is still active...
     if (emu_thread != nullptr)
@@ -355,7 +355,7 @@ void GMainWindow::UpdateRecentFiles() {
 }
 
 void GMainWindow::OnGameListLoadFile(QString game_path) {
-    BootGame(game_path.toLatin1().data());
+    BootGame(game_path.toLocal8Bit().data());
 }
 
 void GMainWindow::OnMenuLoadFile() {
@@ -367,7 +367,7 @@ void GMainWindow::OnMenuLoadFile() {
         settings.setValue("romsPath", QFileInfo(filename).path());
         StoreRecentFile(filename);
 
-        BootGame(filename.toLatin1().data());
+        BootGame(filename.toLocal8Bit().data());
     }
 }
 
@@ -379,7 +379,7 @@ void GMainWindow::OnMenuLoadSymbolMap() {
     if (!filename.isEmpty()) {
         settings.setValue("symbolsPath", QFileInfo(filename).path());
 
-        LoadSymbolMap(filename.toLatin1().data());
+        LoadSymbolMap(filename.toLocal8Bit().data());
     }
 }
 
@@ -400,7 +400,7 @@ void GMainWindow::OnMenuRecentFile() {
     QString filename = action->data().toString();
     QFileInfo file_info(filename);
     if (file_info.exists()) {
-        BootGame(filename.toLatin1().data());
+        BootGame(filename.toLocal8Bit().data());
         StoreRecentFile(filename); // Put the filename on top of the list
     } else {
         // Display an error message and remove the file from the list.
@@ -443,10 +443,18 @@ void GMainWindow::OnOpenHotkeysDialog() {
 
 void GMainWindow::SetHardwareRendererEnabled(bool enabled) {
     VideoCore::g_hw_renderer_enabled = enabled;
+
+    Config config;
+    Settings::values.use_hw_renderer = enabled;
+    config.Save();
 }
 
 void GMainWindow::SetShaderJITEnabled(bool enabled) {
     VideoCore::g_shader_jit_enabled = enabled;
+
+    Config config;
+    Settings::values.use_shader_jit = enabled;
+    config.Save();
 }
 
 void GMainWindow::ToggleWindowMode() {
@@ -458,6 +466,7 @@ void GMainWindow::ToggleWindowMode() {
         if (emulation_running) {
             render_window->setVisible(true);
             render_window->setFocus();
+            game_list->hide();
         }
 
     } else {

@@ -14,6 +14,20 @@ Apesar da boa organização que os packages e as classes aparentam ter, o grupo 
 ![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/Logic_view.png)
 <br>
 
+**Core** -> É considerado dos principais pacotes e é o motor do Citra.
+Utiliza threads para controlar os vários estados do emulador
+
+**Video Core** -> Trata do rendering de toda a aplicação Citra.
+Utiliza OpenGl, shaders e outras ferramentas importantes.
+
+**Citra emu** -> Responsável pelos controlos da aplicação Citra.
+Trata das configurações e do debbuger da mesma.
+
+**Common** -> Pacote auxiliar que guarda muitas funções auxiliares.
+Trata timers, memory e muitas outras funcionalidades.
+
+**Citra** -> A par do pacote Core, este também é considerado dos pacotes mais influentes no projeto. Consegue criar uma emu window onde mostra o potencial do Citra, ainda que de uma forma limitada.
+
 ###**Implementation View**
 
 Neste ponto pretende-se demonstrar os componentes de software e as dependencias que estes estabelecem entre si.

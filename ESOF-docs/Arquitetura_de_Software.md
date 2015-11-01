@@ -5,6 +5,16 @@ Pretende-se com este relatório, uma análise à arquitetura do software do Proj
 
  > É de salientar que, tendo em conta a fase precoce do projeto Citra, não é possível obter diagramas com uma boa precisao.
 
+###**Vista Lógica**
+
+Este ponto contempla os conceitos chave do sistema em estudo, sob a forma de classes ou packages.
+Apesar da boa organização que os packages e as classes aparentam ter, o grupo acordou que a melhor opção seria abordar um diagrama de packages, pois o projeto Citra é composto por um número bastante elevado de classes o que proporcionaria um diagrama bastante complexo e confuso.
+
 ###**Implementation View**
 
 Neste ponto pretende-se demonstrar os componentes de software e as dependencias que estes estabelecem entre si.
+
+###**Casos de Utilização**
+
+Os casos de utilização relacionam as restantes vistas, tornando claras as relações entre as várias componentes do sistema, bem como o comportamento do mesmo sob determinadas situações.
+Nesta fase o projeto Citra, dado que ainda se encontra em desenvolvimento, apenas consegue fazer build e correr alguns jogos apresentando alguma lentidão com algum flick.

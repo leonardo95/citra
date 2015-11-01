@@ -10,6 +10,10 @@ Pretende-se com este relatório, uma análise à arquitetura do software do Proj
 Este ponto contempla os conceitos chave do sistema em estudo, sob a forma de classes ou packages.
 Apesar da boa organização que os packages e as classes aparentam ter, o grupo acordou que a melhor opção seria abordar um diagrama de packages, pois o projeto Citra é composto por um número bastante elevado de classes o que proporcionaria um diagrama bastante complexo e confuso.
 
+<br>
+![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/Logic_view.png)
+<br>
+
 ###**Implementation View**
 
 Neste ponto pretende-se demonstrar os componentes de software e as dependencias que estes estabelecem entre si.

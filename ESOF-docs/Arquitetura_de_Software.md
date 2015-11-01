@@ -15,7 +15,7 @@ Apesar da boa organização que os packages e as classes aparentam ter, o grupo 
 Neste ponto pretende-se demonstrar os componentes de software e as dependencias que estes estabelecem entre si.
 
 <br>
-![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/Implementation_View.PNG)
+![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/Implementation_View.png)
 <br>
 
 Segundo a nossa análise do projeto, o Citra apresenta 3 componentes principais: citra, citra_qt e common. O componente citra utliza uma interface de ligação core que é correspondida pelo componente citra_qt através da interface video_core. Estas interfaces apresentam todo o código central do projeto necessário à compilação do mesmo ao nível lógico e vídeo, respetivamente.

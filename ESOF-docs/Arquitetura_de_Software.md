@@ -40,6 +40,99 @@ Segundo a nossa análise do projeto, o Citra apresenta 3 componentes principais:
 
 Estes dois componentes estabelecem ainda depedências com o componente common, contendo este todo o código comum aos componentes e interfaces referidas.
 
+###**Deployment View**
+
+
+Para correr o simulador em desenvolvimento, citra, apenas precisamos de um computador cujo sistema operativo seja o Linux (Debian ou Arch), o Mac OS X ou o Windows (7 ou superior). É necessário também que o computador suporte OpenGL 3.3, e que seja portador de um sistema de x86-64 bits. Para instalar o Citra é necessário seguir os seguintes passos:
+
+Para Linux:
+	Precisamos de fazer download e instalação dos seguintes programas:
+	
+	GLFW (tested with v3.0.4)
+		Deb: You should probably build this from source. Directions are below.
+		Arch: pacman -S glfw
+	Qt
+		Deb: apt-get install qtbase5-dev libqt5opengl5-dev or apt-get install libqt4-dev libqt4-opengl-dev
+		Arch: pacman -S qt5 or pacman -S qt4
+	GCC v4.7+ (for C++11 support)
+		Deb: apt-get install build-essential
+		Arch: pacman -S base-devel
+	CMake
+		Deb: apt-get install cmake
+		Arch: pacman -S cmake
+
+
+	Fazer build do programa GLFW:
+
+	No Debian, instalae as dependencias com o comando "apt-get install xorg-dev libglu1-mesa-dev.". Posteriormente compilar com:
+		git clone https://github.com/glfw/glfw.git
+		cd glfw
+		mkdir build && cd build
+		cmake -DBUILD_SHARED_LIBS=ON ..
+		make
+		sudo make install
+	No Arch Linux, podemos usar "pacman -S glfw".
+
+	Fazer build do Citra:
+		mkdir build
+		cd build
+		cmake ..
+		make
+		sudo make install (currently doesn't work, needs to be fixed)
+
+	Fazer build com os simbolos de debug:
+		cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo
+		make
+
+	Correr sem instalar:
+		cd data
+		../build/src/citra_qt/citra-qt
+	
+	Debugging:
+		cd data
+		gdb ../build/src/citra_qt/citra-qt
+		(gdb) run
+		<crash>
+		(gdb) bt
+
+
+Para MAC OS X:
+	É recomendado instalar as seguintes dependencias:
+		pkg-config (brew install pkgconfig)
+		GLFW (brew tap homebrew/versions, brew install glfw3)
+		Qt5 (brew install qt5)
+		CMake (brew install cmake)
+
+
+	Fazer build GLFW  a partir da origem:
+		git clone https://github.com/glfw/glfw.git
+		cd glfw
+		mkdir build && cd build
+		cmake ..
+		make
+		sudo make install
+	
+	CMake:
+		mkdir build
+		cd build
+		cmake .. -GXcode
+		
+		Opcionalmente, podemos usar "cmake -i .. -GXcode" ou "ccmake .. -GXcode" para ajustar as várias opções (por ex, desativar o Qt GUI).
+
+	Fazer build com os simbolos de debug:
+		cmake .. -GXcode -DCMAKE_BUILD_TYPE=Debug
+
+	Fazer build do Citra:
+		Abrir o ficheiro do projeto em Xcode, trocar o target de "ALL_BUILD" para "citra" ou "citra_qt", e pressionar a tecla de jogar. Por outro lado, o projeto também pode ser corrido usando o comando:
+			xcodebuild -config Release -project citra.xcodeproj -target citra-qt
+
+Para Windows:
+	Instalar os seguintes programas:
+		CMake
+		Git
+		Visual Studio 2015
+
+
 ###**Casos de Utilização**
 
 Os casos de utilização relacionam as restantes vistas, mostrando as relações entre os vários componentes do sistema.

@@ -43,7 +43,7 @@ Estes dois componentes estabelecem ainda depedências com o componente common, c
 ###**Deployment View**
 
 
-Para correr o simulador em desenvolvimento, citra, apenas precisamos de um computador cujo sistema operativo seja o Linux (Debian ou Arch), o Mac OS X ou o Windows (7 ou superior). É necessário também que o computador suporte OpenGL 3.3, e que seja portador de um sistema de x86-64 bits. Para instalar o Citra é necessário seguir os seguintes passos:
+Para correr o simulador em desenvolvimento, citra, apenas precisamos de um computador cujo sistema operativo seja o Linux (Debian ou Arch), o Mac OS X ou o Windows (7 ou superior). É necessário também que o computador suporte OpenGL 3.3, e que seja portador de um sistema de x86-64 bits. Para instalar e correr o Citra é necessário seguir os seguintes passos:
 
 Para Linux:
 	Precisamos de fazer download e instalação dos seguintes programas:
@@ -131,6 +131,8 @@ Para Windows:
 		CMake
 		Git
 		Visual Studio 2015
+
+	Posteriormente, fazer build do projeto usando os programas instalados e a partir daí será possível correr o projeto.
 
 
 ###**Casos de Utilização**

@@ -43,7 +43,7 @@ Estes dois componentes estabelecem ainda depedências com o componente common, c
 ###**Deployment View**
 
 <br>
-![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/deploymentView.png)
+![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/DeploymentView.png)
 <br>
 
 Tendo em conta que o projeto só corre num computador e visto que só necessita de um artefacto com uma instância do citra no computador (node) o UML apresentado é o que achamos mais adequado para a representação da visão de desenvolvimento do projeto. Seguidamente será necessário um jogo para que o projeto desempenhe o seu objetivo, correr jogos simulando uma Nintendo 3DS, daí verificarmos o artefacto "Jogo Exemplo".

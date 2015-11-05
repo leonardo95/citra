@@ -42,12 +42,12 @@ Estes dois componentes estabelecem ainda depedências com o componente common, c
 
 ###**Deployment View**
 
-
 <br>
 ![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/deploymentView.png)
 <br>
 
-Para correr o simulador em desenvolvimento, citra, apenas precisamos de um computador cujo sistema operativo seja o Linux (Debian ou Arch), o Mac OS X ou o Windows (7 ou superior). É necessário também que o computador suporte OpenGL 3.3, e que seja portador de um sistema de x86-64 bits. Para instalar e correr o Citra é necessário seguir os seguintes passos:
+Tendo em conta que o projeto só corre num computador e visto que só necessita de um artefacto com uma instância do citra no computador (node) o UML apresentado é o que achamos mais adequado para a representação da visão de desenvolvimento do projeto. Seguidamente será necessário um jogo para que o projeto desempenhe o seu objetivo, correr jogos simulando uma Nintendo 3DS, daí verificarmos o artefacto "Jogo Exemplo".
+Assim sendo, para correr o simulador em análise (citra) apenas precisamos de um computador cujo sistema operativo seja o Linux (Debian ou Arch), o Mac OS X ou o Windows (7 ou superior). É necessário também que o computador suporte OpenGL 3.3, e que seja portador de um sistema de x86-64 bits. Para instalar e correr o Citra é necessário seguir os seguintes passos:
 
 Para Linux:
 	Precisamos de fazer download e instalação dos seguintes programas:

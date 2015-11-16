@@ -22,17 +22,29 @@ Está dividido nos seguintes submódulos:
 - **Perceptibilidade**
 - **Heterogenidade**
 
-###**Controlabilidade** - grau no qual é possível controlar o estado do componente a ser testado (CUT) em conformidade com o teste.
+###**Controlabilidade**
 
-###**Observabilidade** - grau no qual é possível observar os resultados intermediários e finais dos testes.
+**Definição:** Grau no qual é possível controlar o estado do componente a ser testado (CUT) em conformidade com o teste.
 
-###**Capacidade de Isolação** - grau em que o componente a ser testado (CUT) pode ser testado em isolamento.
+###**Observabilidade**
 
-###**Separação de conceitos** - grau em que o componente a ser testado tem uma responsabilidade única bem definida.
+**Definição:** Grau no qual é possível observar os resultados intermediários e finais dos testes.
 
-###**Perceptibilidade** - grau em que o componente a ser testado está documentado e auto-explicativo.
+###**Capacidade de Isolação**
 
-###**Heterogenidade** - grau em que a utilização de diversas tecnologias requer o uso de diversos métodos de ensaio e ferramentas em paralelo.
+**Definição:** Grau em que o componente a ser testado (CUT) pode ser testado em isolamento.
+
+###**Separação de conceitos**
+
+**Definição:** Grau em que o componente a ser testado tem uma responsabilidade única bem definida.
+
+###**Perceptibilidade** 
+
+**Definição:** Grau em que o componente a ser testado está documentado e auto-explicativo.
+
+###**Heterogenidade** 
+
+**Definição:** Grau em que a utilização de diversas tecnologias requer o uso de diversos métodos de ensaio e ferramentas em paralelo.
 
 ===============
 
@@ -42,6 +54,6 @@ Este módulo diz respeito ao número de testes utilizados bem como a sua cobertura
 
 ===============
 
-##**Bug Report*
+##**Bug Report**
 
 Neste módulo serão criados casos de teste que serão posteriormente aplicados e analisados.

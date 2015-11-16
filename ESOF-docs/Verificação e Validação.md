@@ -17,7 +17,7 @@ Este módulo aborda a testabilidade do programa e o os testes capazes de melhorar
 Está dividido nos seguintes submódulos:
 - **Controlabilidade**
 - **Observabilidade**
-- **Capacidade de Isolação**
+- **Capacidade de Isolamento**
 - **Separação de conceitos**
 - **Perceptibilidade**
 - **Heterogenidade**
@@ -30,7 +30,7 @@ Está dividido nos seguintes submódulos:
 
 **Definição:** Grau no qual é possível observar os resultados intermediários e finais dos testes.
 
-###**Capacidade de Isolação**
+###**Capacidade de Isolamento**
 
 **Definição:** Grau em que o componente a ser testado (CUT) pode ser testado em isolamento.
 

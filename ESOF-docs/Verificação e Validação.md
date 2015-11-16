@@ -42,9 +42,29 @@ Está dividido nos seguintes submódulos:
 
 **Definição:** Grau em que o componente a ser testado está documentado e auto-explicativo.
 
+Em projetos de grande dimensão e com um grande número de contribuidores, é bastante importante que todos os intervenientes
+sigam um certo código e conduta de forma a tornar o projeto Citra em algo consistente e conciso.
+
+O Citra não apresenta uma API com os recursos utilizados mas apresenta ao longo das classes e do seu código,
+vários elementos comentados onde é explicado o seu conteudo das variaveis ou secções ai presentes. 
+
+
 ###**Heterogenidade** 
 
 **Definição:** Grau em que a utilização de diversas tecnologias requer o uso de diversos métodos de ensaio e ferramentas em paralelo.
+
+O desenvolvimento de um projeto com recurso a repositorios Git que está sujeito á ação de inumeros
+contribuidores conduz não só a uma maior necessidade de comunicação entre os intervenientes, (neste caso,
+os contribuidores ou outras pessoas que desejam contribuir comunicam atraves do canal #citra-dev @ Freenode)
+como uma maior necessidade de recorrer a testes unitarios e testes ao sistema para verificar a validade das
+alterações efetuadas ao projeto. 
+
+Como o Citra trata-se de um projeto open-source, torna-se imperativo que apósa aceitação dos pull-resquests,
+ o sistema permaneça operacional.
+ 
+No entanto neste projeto, e apesar de os testes unitarios á classe garantirem uma maior eficacia em relação aos testes feitos
+ao sistema, os testes realizados não foram realizados de uma forma precisa nem com recurso a ferramentas.
+
 
 ===============
 

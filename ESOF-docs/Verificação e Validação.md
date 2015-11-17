@@ -82,7 +82,7 @@ Segundo as informações recolhidas aos principais colaboradores, o projeto **[C
 
  - Yuri Schlesner.
 
- Exemplo do output aquando da compilação do projeto:  **[Compilação](https://ci.appveyor.com/project/bunnei/citra/build/1.0.2169#L7)**
+Exemplo do output aquando da compilação do projeto:  **[Compilação](https://ci.appveyor.com/project/bunnei/citra/build/1.0.2169#L7)**
 
 ===============
 <a name="modulo3"/>

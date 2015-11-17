@@ -70,7 +70,14 @@ ao sistema, os testes realizados não foram realizados de uma forma precisa nem c
 
 ##**Estatísticas de teste**
 
-Este módulo diz respeito ao número de testes utilizados bem como a sua cobertura individual e do código gerado. 
+Este módulo diz respeito ao número de testes utilizados bem como a sua cobertura individual e do código gerado.
+
+Segundo as informações recolhidas aos principais colaboradores, o projeto **[Citra](http://citra-emu.org/)** não utiliza nenhum modelo de teste documentado. Estes apenas referem a utilização de testes de hardware que muitas vezes são ignorados aquando da escrita de código.
+
+" When implementing a feature, usually hwtests (small standalone program demoing some hardware or OS feature) are ran and should have matching output on the console and emulator. For software features developed with heavy code RE aid I usually skip tests and just assume my implementation is correct since I used an authoritative reference." 
+
+ - Yuri Schlesner.
+
 
 ===============
 

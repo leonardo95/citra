@@ -1,78 +1,83 @@
 
-#**VerificaÁ„o e ValidaÁ„o**
+#**Verifica√ß√£o e Valida√ß√£o**
 
-Este relatÛrio tem como objetivo a an·lise ‡ verificaÁ„o e ‡ validaÁ„o do software do projeto **[Citra](http://citra-emu.org/)**. Objetivamente espera-se que a verificaÁ„o esteja em conformidade com a especificaÁ„o do projeto e que a validaÁ„o mostre que o programa est· de acordo com as necessidades do utilizador.
+Este relat√≥rio tem como objetivo a an√°lise √† verifica√ß√£o e √† valida√ß√£o do software do projeto **[Citra](http://citra-emu.org/)**. Objetivamente espera-se que a verifica√ß√£o esteja em conformidade com a especifica√ß√£o do projeto e que a valida√ß√£o mostre que o programa est√° de acordo com as necessidades do utilizador.
 
-Pode-se assim subdividir este relatÛrio em 3 partes:
-- **Grau de testabilidade do software do programa**
-- **EstatÌsticas de teste**
-- **Bug Report**
+Pode-se assim subdividir este relat√≥rio em 3 partes:
+- [**Grau de testabilidade do software do programa**](#modulo1)
+- [**Estat√≠sticas de teste**](#modulo2)
+- [**Bug Report**](#modulo3)
 
 ===============
-
+<a name="modulo1"/>
 ##**Grau de testabilidade do software do programa**
 
-Este mÛdulo aborda a testabilidade do programa e o os testes capazes de melhorar os seus componentes de software.
+Este m√≥dulo aborda a testabilidade do programa e o os testes capazes de melhorar os seus componentes de software.
 
-Est· dividido nos seguintes submÛdulos:
-- **Controlabilidade**
-- **Observabilidade**
-- **Capacidade de Isolamento**
-- **SeparaÁ„o de conceitos**
-- **Perceptibilidade**
-- **Heterogenidade**
+Est√° dividido nos seguintes subm√≥dulos:
+- [**Controlabilidade**](#controlabilidade)
+- [**Observabilidade**](#observabilidade)
+- [**Capacidade de Isolamento**](#isolamento)
+- [**Separa√ß√£o de conceitos**](#sep_conceitos)
+- [**Perceptibilidade**](#perceptibilidade)
+- [**Heterogenidade**](#heterogenidade)
 
+<a name="controlabilidade"/>
 ###**Controlabilidade**
 
-**DefiniÁ„o:** Grau no qual È possÌvel controlar o estado do componente a ser testado (CUT) em conformidade com o teste.
+**Defini√ß√£o:** Grau no qual √© poss√≠vel controlar o estado do componente a ser testado (CUT) em conformidade com o teste.
 
+<a name="observabilidade"/>
 ###**Observabilidade**
 
-**DefiniÁ„o:** Grau no qual È possÌvel observar os resultados intermedi·rios e finais dos testes.
+**Defini√ß√£o:** Grau no qual √© poss√≠vel observar os resultados intermedi√°rios e finais dos testes.
 
+<a name="isolamento"/>
 ###**Capacidade de Isolamento**
 
-**DefiniÁ„o:** Grau em que o componente a ser testado (CUT) pode ser testado em isolamento.
+**Defini√ß√£o:** Grau em que o componente a ser testado (CUT) pode ser testado em isolamento.
 
-###**SeparaÁ„o de conceitos**
+<a name="sep_conceitos"/>
+###**Separa√ß√£o de conceitos**
 
-**DefiniÁ„o:** Grau em que o componente a ser testado tem uma responsabilidade ˙nica bem definida.
+**Defini√ß√£o:** Grau em que o componente a ser testado tem uma responsabilidade √∫nica bem definida.
 
+<a name="perceptibilidade"/>
 ###**Perceptibilidade** 
 
-**DefiniÁ„o:** Grau em que o componente a ser testado est· documentado e auto-explicativo.
+**Defini√ß√£o:** Grau em que o componente a ser testado est√° documentado e auto-explicativo.
 
-Em projetos de grande dimens„o e com um grande n˙mero de contribuidores, È bastante importante que todos os intervenientes
-sigam um certo cÛdigo e conduta de forma a tornar o projeto Citra em algo consistente e conciso.
+Em projetos de grande dimens√£o e com um grande n√∫mero de contribuidores, √© bastante importante que todos os intervenientes
+sigam um certo c√≥digo e conduta de forma a tornar o projeto Citra em algo consistente e conciso.
 
-O Citra n„o apresenta uma API com os recursos utilizados mas apresenta ao longo das classes e do seu cÛdigo,
-v·rios elementos comentados onde È explicado o seu conteudo das variaveis ou secÁıes ai presentes. 
+O Citra n√£o apresenta uma API com os recursos utilizados mas apresenta ao longo das classes e do seu c√≥digo,
+v√°rios elementos comentados onde √© explicado o seu conteudo das variaveis ou sec√ß√µes ai presentes. 
 
-
+<a name="heterogenidade"/>
 ###**Heterogenidade** 
 
-**DefiniÁ„o:** Grau em que a utilizaÁ„o de diversas tecnologias requer o uso de diversos mÈtodos de ensaio e ferramentas em paralelo.
+**Defini√ß√£o:** Grau em que a utiliza√ß√£o de diversas tecnologias requer o uso de diversos m√©todos de ensaio e ferramentas em paralelo.
 
-O desenvolvimento de um projeto com recurso a repositorios Git que est· sujeito · aÁ„o de inumeros
-contribuidores conduz n„o sÛ a uma maior necessidade de comunicaÁ„o entre os intervenientes, (neste caso,
+O desenvolvimento de um projeto com recurso a repositorios Git que est√° sujeito √° a√ß√£o de inumeros
+contribuidores conduz n√£o s√≥ a uma maior necessidade de comunica√ß√£o entre os intervenientes, (neste caso,
 os contribuidores ou outras pessoas que desejam contribuir comunicam atraves do canal #citra-dev @ Freenode)
 como uma maior necessidade de recorrer a testes unitarios e testes ao sistema para verificar a validade das
-alteraÁıes efetuadas ao projeto. 
+altera√ß√µes efetuadas ao projeto. 
 
-Como o Citra trata-se de um projeto open-source, torna-se imperativo que apÛsa aceitaÁ„o dos pull-resquests,
- o sistema permaneÁa operacional.
+Como o Citra trata-se de um projeto open-source, torna-se imperativo que ap√≥sa aceita√ß√£o dos pull-resquests,
+ o sistema permane√ßa operacional.
  
-No entanto neste projeto, e apesar de os testes unitarios · classe garantirem uma maior eficacia em relaÁ„o aos testes feitos
-ao sistema, os testes realizados n„o foram realizados de uma forma precisa nem com recurso a ferramentas.
+No entanto neste projeto, e apesar de os testes unitarios √° classe garantirem uma maior eficacia em rela√ß√£o aos testes feitos
+ao sistema, os testes realizados n√£o foram realizados de uma forma precisa nem com recurso a ferramentas.
 
 
 ===============
+<a name="modulo2"/>
+##**Estat√≠sticas de teste**
 
-##**EstatÌsticas de teste**
+Este m√≥dulo diz respeito ao n√∫mero de testes utilizados bem como a sua cobertura individual e do c√≥digo gerado.
 
-Este mÛdulo diz respeito ao n˙mero de testes utilizados bem como a sua cobertura individual e do cÛdigo gerado.
-
-Segundo as informaÁıes recolhidas aos principais colaboradores, o projeto **[Citra](http://citra-emu.org/)** n„o utiliza nenhum modelo de teste documentado. Estes apenas referem a utilizaÁ„o de testes de hardware que muitas vezes s„o ignorados aquando da escrita de cÛdigo.
+Segundo as informa√ß√µes recolhidas aos principais colaboradores, o projeto **[Citra](http://citra-emu.org/)** n√£o utiliza nenhum modelo de teste documentado. Estes apenas referem a utiliza√ß√£o de testes de hardware que muitas vezes s√£o ignorados aquando da escrita de c√≥digo.
 
 " When implementing a feature, usually hwtests (small standalone program demoing some hardware or OS feature) are ran and should have matching output on the console and emulator. For software features developed with heavy code RE aid I usually skip tests and just assume my implementation is correct since I used an authoritative reference." 
 
@@ -80,7 +85,7 @@ Segundo as informaÁıes recolhidas aos principais colaboradores, o projeto **[Cit
 
 
 ===============
-
+<a name="modulo3"/>
 ##**Bug Report**
 
-Neste mÛdulo ser„o criados casos de teste que ser„o posteriormente aplicados e analisados.
+Neste m√≥dulo ser√£o criados casos de teste que ser√£o posteriormente aplicados e analisados.

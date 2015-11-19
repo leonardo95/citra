@@ -6,6 +6,7 @@ Pode-se assim subdividir este relatório em 3 partes:
 - [**Grau de testabilidade do software do programa**](#modulo1)
 - [**Estatísticas de teste**](#modulo2)
 - [**Bug Report**](#modulo3)
+- [**Bibliografia**](#modulo4)
 
 ===============
 <a name="modulo1"/>
@@ -84,14 +85,28 @@ Segundo as informações recolhidas aos principais colaboradores, o projeto **[C
 
 No entanto, após uma análise mais detalha sobre o projeto, foram encontrados dois modelos de teste:
 
--Teste consola:
+-**Teste consola**:
 
-Nesta categoria, os colaboradores testam o software gerado consoante o output gerado na consola: **[Compilação](https://ci.appveyor.com/project/bunnei/citra/build/1.0.2169#L7)**
+Nesta categoria, os colaboradores testam o software gerado consoante o output gerado na consola: **[Consola](https://ci.appveyor.com/project/bunnei/citra/build/1.0.2169#L7)**
 
--Testes Travis CI:
+-**Testes Travis CI**:
+
+No que diz respeito à ferramenta Travis CI esta é utilizada pelos colaboradores para compilação e teste do software através da análise do ficheiro gerado:
+**[Travis CI](https://travis-ci.org/citra-emu/citra)**
+
+Por fim, importante referir que estes modelos de teste não permitem a geração de estatísticas viávies para apresentação e como o projeto se encontra inacabado, não é possível demonstrar uma cobertura estatística do código gerado.
 
 ===============
 <a name="modulo3"/>
 ##**Bug Report**
 
 Neste módulo serão criados casos de teste que serão posteriormente aplicados e analisados.
+
+
+===============
+<a name="modulo4"/>
+##**Bibliografia**
+
+**[Moodle - Verificação e Validação](http://moodle.up.pt/pluginfile.php/74998/mod_resource/content/2/ESOF-VV%20-%20Part%20I.pdf)**
+**[Moodle - Software testing](http://moodle.up.pt/pluginfile.php/74998/mod_resource/content/2/ESOF-VV%20-%20Part%20I.pdf)**
+**[Travis CI](https://en.wikipedia.org/wiki/Travis_CI)**

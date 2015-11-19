@@ -108,5 +108,7 @@ Neste módulo serão criados casos de teste que serão posteriormente aplicados 
 ##**Bibliografia**
 
 **[Moodle - Verificação e Validação](http://moodle.up.pt/pluginfile.php/74998/mod_resource/content/2/ESOF-VV%20-%20Part%20I.pdf)**
+
 **[Moodle - Software testing](http://moodle.up.pt/pluginfile.php/74998/mod_resource/content/2/ESOF-VV%20-%20Part%20I.pdf)**
+
 **[Travis CI](https://en.wikipedia.org/wiki/Travis_CI)**

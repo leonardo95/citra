@@ -82,7 +82,13 @@ Segundo as informações recolhidas aos principais colaboradores, o projeto **[C
 
  - Yuri Schlesner.
 
-Exemplo do output aquando da compilação do projeto:  **[Compilação](https://ci.appveyor.com/project/bunnei/citra/build/1.0.2169#L7)**
+No entanto, após uma análise mais detalha sobre o projeto, foram encontrados dois modelos de teste:
+
+-Teste consola:
+
+Nesta categoria, os colaboradores testam o software gerado consoante o output gerado na consola: **[Compilação](https://ci.appveyor.com/project/bunnei/citra/build/1.0.2169#L7)**
+
+-Testes Travis CI:
 
 ===============
 <a name="modulo3"/>

@@ -1,4 +1,4 @@
-Historico de emails
+﻿Historico de emails
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 03/10/2015
@@ -81,3 +81,39 @@ Main project priorities right now (even though development is a bit slow) is imp
 Again, thank you for your time.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hello, I'm a student from University of Porto currently getting a masters in Computer Engennering
+and I'm supossed, with a few colleagues, analyse a open-source project and we chose Citra.
+However  we are currently having some questions we would hope you could answer. We know that the project has different modules can you please tell us a basic outline of those modules and their relations? Also, in the Citra forlder src you have different folders, can you please tell us what those folders concern and relate(citra, citra_qt, commons, core and video_core)?
+
+Best regards,
+André Barros
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hi André,
+
+Sorry for the delay - I don't often check this email account. At the top level, the folders are:
+- dist - Files used just for building the final distributable binary (e.g. icons)
+- externals - Third party modules that Citra uses
+- hooks - These are rules that enforce stylistic things when committing
+- src - The Citra main project source code
+
+Within src, the structure is as follows:
+- citra - This is just a bare-minimum CLI interface for Citra. It has no emulation code.
+- citra_qt - This is a Qt frontend for Citra. It's mostly GUI/debugger code, and no emulation code.
+- common - This is just common boilerplate code used throughout the emulator for utility-type things
+- core - This is the 'core' emulator, which includes mostly CPU, memory, filesystem, and OS emulation of the 3DS. Within this, there is:
+    - arm - The main CPU emulator, which is for ARM11
+    - file_sys - Emulates 3DS' file system(s)
+    - gdbstub - Interface for using GDB as a debugger with Citra, not any core emulation
+    - hle - "High level emulation" components (lookup HLE if you're not sure what it is), this is basically where our 3DS OS emulation is
+    - hw - Low level hardware emulation (which is very little, since Citra mostly emulates 3DS' software environment, not the actual hardware peripherals)
+    - loader - Code to load binary executables
+    - tracer - Debugger code, not that important
+- video_core - This is the GPU emulator, which includes code for emulating 3DS' Pica GPU, as well as an implementation of a software renderer and an OpenGL-based renderer
+
+
+Hope that helps a bit.
+
+Regards,
+bunnei

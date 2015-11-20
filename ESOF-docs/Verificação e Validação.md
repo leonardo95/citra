@@ -1,4 +1,4 @@
-#**Verificação e Validação**
+﻿#**Verificação e Validação**
 
 Este relatório tem como objetivo a análise à verificação e à validação do software do projeto **[Citra](http://citra-emu.org/)**. Objetivamente espera-se que a verificação esteja em conformidade com a especificação do projeto e que a validação mostre que o programa está de acordo com as necessidades do utilizador.
 
@@ -41,6 +41,19 @@ Está dividido nos seguintes submódulos:
 ###**Separação de conceitos**
 
 **Definição:** Grau em que o componente a ser testado tem uma responsabilidade única bem definida.
+
+O desenvolvimento de projetos em grande escala deve garantir que a funcionalidade atribuida a uma classe ou várias
+classes, fique focada exclusivamente ao elemento a que diz respeito, isto para evitar que o código e funcionalidades
+fiquem baralhas e posteriormente, menos eficientes.
+
+O projeto Citra apresenta uma separação de conceitos bem definida e concisa. A equipa responsável optou por
+criar vários packages de forma a separar os diferentes conceitos a que o Citra está exposto. Para além disso, 
+o Citra, tem como bases a coerência e a eficiência isto porque, tenta ao máximo evitar a repetição de código e por vezes reutiliza
+código para negar a introdução de bugs.
+No Citra, o package Commons é o responsável pela gerência de todos os fatores referenciados anteriormente.
+
+É imperativo recorrer á separação de conceitos de forma a facilitar o isolamento dos elementos nos testes o que 
+permite cobrir uma maior percentagem de casos de teste.
 
 <a name="perceptibilidade"/>
 ###**Perceptibilidade** 

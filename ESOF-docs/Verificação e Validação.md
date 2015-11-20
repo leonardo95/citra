@@ -1,8 +1,8 @@
-﻿#**Verificação e Validação**
+#**Verificação e Validação**
 
-Este relatório tem como objetivo a análise à verificação e à validação do software do projeto **[Citra](http://citra-emu.org/)**. Objetivamente espera-se que a verificação esteja em conformidade com a especificação do projeto e que a validação mostre que o programa está de acordo com as necessidades do utilizador.
+Neste ponto da avaliação, à cadeira de Engenharia de Software, foi proposto ao grupo incidir sobre a análise à verificação e validação do software do projeto **[Citra](http://citra-emu.org/)**. Objetivamente, espera-se que a verificação esteja em conformidade com a especificação do projeto e que a validação mostre que o programa está de acordo com as necessidades do utilizador.
 
-Pode-se assim subdividir este relatório em 3 partes:
+Pode-se assim subdividir este relatório em 4 partes:
 - [**Grau de testabilidade do software do programa**](#modulo1)
 - [**Estatísticas de teste**](#modulo2)
 - [**Bug Report**](#modulo3)
@@ -12,7 +12,8 @@ Pode-se assim subdividir este relatório em 3 partes:
 <a name="modulo1"/>
 ##**Grau de testabilidade do software do programa**
 
-Este módulo aborda a testabilidade do programa e o os testes capazes de melhorar os seus componentes de software.
+A análise do grau de testabilidade é algo importante, e visto que o projeto em análise é portador de uma grande complexidade e variedade os testes devem estender-se a todos os pequenos componentes do software. Os testes são importantes em vários pontos mas principalmente são importantes para garantir a qualidade do projeto, ao longo do desenvolvimento do mesmo.
+Visto isto, torna-se fácil perceber o quão útil, mas também simples, é testar o software.
 
 Está dividido nos seguintes submódulos:
 - [**Controlabilidade**](#controlabilidade)
@@ -26,6 +27,11 @@ Está dividido nos seguintes submódulos:
 ###**Controlabilidade**
 
 **Definição:** Grau no qual é possível controlar o estado do componente a ser testado (CUT) em conformidade com o teste.
+
+Analisando a controlabilidade dos componentes sob teste, CUT ou "component under test", verificamos que a mesma é tanto maior quanto mais específico for o componente em análise. Por outras palavras, percebemos que a controlabilidade de um teste que abrange um módulo do "video_core" a probabilidade daquela ser reduzida é elevada pois o "video_core" interage com uma diversidade de módulos e daí ser difícil de prever, para alguns casos, todas as situações possíveis.
+No caso mais específico do projeto **[Citra](http://citra-emu.org/)**, visto que não realiza testes não podemos falar concretamente para os módulos existentes, podendo apenas teorizar sobre o assunto, como feito para o módulo "video_core" anteriormente.
+Por conseguinte, é de fácil perceção que um componente mais "interior" ao componente deverá ter uma controlabilidade maior pois limita a sua interãção aos outros componentes do módulo e ao próprio módulo. Temos como exemplo o componente "video_core.h", que sendo um componente do módulo "video_core" deverá ter uma controlabilidade elevada.
+Em suma, podemos afirmar que quanto maior a profundidade do componente, em relação à sua posição no código, maior deverá ser a sua controladidade, ou seja, quanto mais específico for um componente maior será a sua controlabilidade.
 
 <a name="observabilidade"/>
 ###**Observabilidade**
@@ -77,8 +83,7 @@ os contribuidores ou outras pessoas que desejam contribuir comunicam atraves do 
 como uma maior necessidade de recorrer a testes unitarios e testes ao sistema para verificar a validade das
 alterações efetuadas ao projeto. 
 
-Como o Citra trata-se de um projeto open-source, torna-se imperativo que apósa aceitação dos pull-resquests,
- o sistema permaneça operacional.
+Como o Citra trata-se de um projeto open-source, torna-se imperativo que após a aceitação dos pull-resquests, o sistema permaneça operacional.
  
 No entanto neste projeto, e apesar de os testes unitarios á classe garantirem uma maior eficacia em relação aos testes feitos
 ao sistema, os testes realizados não foram realizados de uma forma precisa nem com recurso a ferramentas.

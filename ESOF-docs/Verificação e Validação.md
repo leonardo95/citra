@@ -95,7 +95,7 @@ ao sistema, os testes realizados não foram realizados de uma forma precisa nem 
 
 Este módulo diz respeito ao número de testes utilizados bem como a sua cobertura individual e do código gerado.
 
-Segundo as informações recolhidas aos principais colaboradores, o projeto **[Citra](http://citra-emu.org/)** não utiliza nenhum modelo de teste documentado. Estes apenas referem a utilização de testes de hardware que muitas vezes são ignorados aquando da escrita de código.
+Segundo as informações recolhidas aos principais colaboradores, o projeto **[Citra](http://citra-emu.org/)** não utiliza nenhum modelo de teste documentado. Estes apenas referem a utilização de testes de [hardware](https://github.com/citra-emu/hwtests) que muitas vezes são ignorados aquando da escrita de código.
 
 " When implementing a feature, usually hwtests (small standalone program demoing some hardware or OS feature) are ran and should have matching output on the console and emulator. For software features developed with heavy code RE aid I usually skip tests and just assume my implementation is correct since I used an authoritative reference." 
 
@@ -110,7 +110,7 @@ Nesta categoria, os colaboradores testam o software gerado consoante o output ge
 -**Testes Travis CI**:
 
 No que diz respeito à ferramenta Travis CI esta é utilizada pelos colaboradores para compilação e teste do software através da análise do ficheiro gerado:
-**[Travis CI](https://travis-ci.org/citra-emu/citra)**
+**[Travis CI - citra](https://travis-ci.org/citra-emu/citra)** **[Travis CI - hwtests](https://travis-ci.org/citra-emu/hwtests)**
 
 Por fim, importante referir que estes modelos de teste não permitem a geração de estatísticas viávies para apresentação e como o projeto se encontra inacabado, não é possível demonstrar uma cobertura estatística do código gerado.
 

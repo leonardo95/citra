@@ -63,8 +63,10 @@ Portanto, nada podemos concluir à cerca da observabilidade dos testes do projet
 Porém, podemos afirmar que se fossem realizados testes, e aplicados aos módulos principais do projeto (como citra, 
 citra_qt e video_core), seria fácil detetar as várias falhas que poderiam existir no projeto. Posteriormente, com 
 recurso a programas e ferramentas próprias, poderiam ser obtidas as estatísticas de teste e assim poderiamos afirmar 
-que a observabilidade era bastante boa pois permitia, de uma forma estruturada, perceber a evolução do código e a sua
-eficiência, visando sempre a otimização do código e, por conseguinte, do projeto.
+que a observabilidade seria boa pois permitia, de uma forma estruturada, perceber a evolução do código e a sua
+eficiência, visando sempre a otimização do código e, por conseguinte, do projeto. Por outro lado, se não fossem
+usadas essas ferramentas, que se traduziriam numa fácil interpretação dos testes, a observabilidade poderia não ser
+a melhor.
 
 Resumindo, visto que os testes são, de certa forma, da inteira responsabilidade do autor do código (sendo que este pode 
 até decidir, ou não, realizar os testes ao software), podemos concluir que a observabilidade vai ser dependente da técnica 

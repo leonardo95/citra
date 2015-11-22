@@ -164,7 +164,17 @@ Por fim, importante referir que estes modelos de teste não permitem a geração
 <a name="modulo3"/>
 ##**Bug Report**
 
-Neste módulo serão criados casos de teste que serão posteriormente aplicados e analisados.
+Como este é um projeto que se encontra numa fase inicial de desenvolvimento, é normal que este emulador se encontre com bastantes bugs, principalmente no que toca a aspectos gráficos e tentar
+correr jogos comerciais, como é perceptivel nos issues. No entanto apenas foram desenvolvidos [testes ao hardware](https://github.com/citra-emu/hwtests) a correr no proprio emulador, porém para realizar os testes é necessario fazer o download e correr o [Homebrew Channel](https://github.com/smealum/3ds_hb_menu) e lançar o 3ds link, pressionando o butao X do teclado e em seguida configurar o IP e port. Contudo, ao tentar correr o 3ds link, dá erro, não sendo assim possível correr esses mesmos testes.
+
+
+<br>
+![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/erro.png)
+<br>
+
+
+Estes teste de hardware, todavia, apenas testam certos estados do hardware da Nintendo 3DS, não testando efectivamente o código do projeto, sendo que por esse motivo, e por os testes estarem ainda numa fase de criação muito inicial, é da nossa opinião que este não é um bom modelo para testar o extenso código que provém dum projeto tão elaborado como este. 
+
 
 
 ===============

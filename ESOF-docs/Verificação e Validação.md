@@ -30,18 +30,25 @@ Está dividido nos seguintes submódulos:
 
 Analisando a controlabilidade dos componentes sob teste, CUT ou "component under test", verificamos que a mesma é tanto maior quanto mais específico for o componente em análise. Por outras palavras, percebemos que a controlabilidade de um teste que abrange um módulo do "video_core" a probabilidade daquela ser reduzida é elevada pois o "video_core" interage com uma diversidade de módulos e daí ser difícil de prever, para alguns casos, todas as situações possíveis.
 No caso mais específico do projeto **[Citra](http://citra-emu.org/)**, visto que não realiza testes não podemos falar concretamente para os módulos existentes, podendo apenas teorizar sobre o assunto, como feito para o módulo "video_core" anteriormente.
+Também módulos como "citra" e "citra_qt" também pode ser analisados como mostrado anteriormente para o módulo "video_core" devia à complexidade que lhes é característica.
 Por conseguinte, é de fácil perceção que um componente mais "interior" ao componente deverá ter uma controlabilidade maior pois limita a sua interãção aos outros componentes do módulo e ao próprio módulo. Temos como exemplo o componente "video_core.h", que sendo um componente do módulo "video_core" deverá ter uma controlabilidade elevada.
 Em suma, podemos afirmar que quanto maior a profundidade do componente, em relação à sua posição no código, maior deverá ser a sua controladidade, ou seja, quanto mais específico for um componente maior será a sua controlabilidade.
 
 <a name="observabilidade"/>
 ###**Observabilidade**
 
-**Definição:** Grau no qual é possível observar os resultados intermediários e finais dos testes.
+A observabilidade pode ser encarada como o grau no qual é possível observar os resultados intermediários e finais dos testes.
+Visto isto, percebemos que no projeto em análise, visto que não foram realizados os testes de software usuais, as estatísticas de teste irão ser muito difíceis de obter, como poderá ser visto mais à frente.
+Assim, a observabilidade relativa aos resultados de testes vai ser inexistente pois estes efetivamente não existem. Portanto, nada podemos concluir à cerca da observabilidade dos testes do projeto **[Citra](http://citra-emu.org/)**.
+Porém, podemos afirmar que se fossem realizados testes, e aplicados aos módulos principais do projeto (como citra, citra_qt e video_core), seria fácil detetar as várias falhas que poderiam existir no projeto. Posteriormente, com recurso a programas e ferramentas próprias, poderiam ser obtidas as estatísticas de teste e assim poderiamos afirmar que a observabilidade era bastante boa pois permitia, de uma forma estruturada, perceber a evolução do código e a sua eficiência, visando sempre a otimização do código e, por conseguinte, do projeto.
+Resumindo, visto que os testes são, de certa forma, da inteira responsabilidade do autor do código (sendo que este pode até decidir, ou não, realizar os testes ao software), podemos concluir que a observabilidade vai ser dependente da técnica usada para a sua implementação, pelo que não podemos dizer com certeza que a observabilidade seja ótima ou não, pelo menos não de forma constante.
 
 <a name="isolamento"/>
 ###**Capacidade de Isolamento**
 
 **Definição:** Grau em que o componente a ser testado (CUT) pode ser testado em isolamento.
+
+
 
 <a name="sep_conceitos"/>
 ###**Separação de conceitos**

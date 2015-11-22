@@ -30,26 +30,28 @@ Está dividido nos seguintes submódulos:
 
 Analisando a controlabilidade dos componentes sob teste, CUT ou "component under test", verificamos que a mesma é tanto 
 maior quanto mais específico for o componente em análise. Por outras palavras, percebemos que a controlabilidade de um 
-teste que abrange um módulo do "video_core" a probabilidade daquela ser reduzida é elevada pois o "video_core" interage 
+teste que abrange um módulo do "video_core", por exemplo, terá uma grande probabilidade de ser reduzida pois o "video_core" interage 
 com uma diversidade de módulos e daí ser difícil de prever, para alguns casos, todas as situações possíveis.
 
 No caso mais específico do projeto **[Citra](http://citra-emu.org/)**, visto que não realiza testes não podemos falar 
 concretamente para os módulos existentes, podendo apenas teorizar sobre o assunto, como feito para o módulo "video_core" anteriormente.
 
-Também módulos como "citra" e "citra_qt" também pode ser analisados como mostrado anteriormente para o módulo "video_core" 
-devia à complexidade que lhes é característica.
+Também módulos como "citra" e "citra_qt" podem ser analisados como mostrado anteriormente para o módulo "video_core" 
+devido à complexidade que lhes é característica.
 
 Por conseguinte, é de fácil perceção que um componente mais "interior" ao componente deverá ter uma controlabilidade maior pois limita 
-a sua interãção aos outros componentes do módulo e ao próprio módulo. Temos como exemplo o componente "video_core.h", que sendo um 
+a sua interação aos outros componentes do módulo e ao próprio módulo. Temos como exemplo o componente "video_core.h", que sendo um 
 componente do módulo "video_core" deverá ter uma controlabilidade elevada.
 
 Em suma, podemos afirmar que quanto maior a profundidade do componente, em relação à sua posição no código, maior deverá ser a sua 
-controladidade, ou seja, quanto mais específico for um componente maior será a sua controlabilidade.
+controladidade, ou seja, quanto mais específico for um componente maior será a sua controlabilidade. De outra forma, podemos afirmar também
+que quanto menos um módulo, ou componente, depender de outros componentes maior será a controlabilidade dos testes que irão incidir sobre
+o mesmo.
 
 <a name="observabilidade"/>
 ###**Observabilidade**
 
-A observabilidade pode ser encarada como o grau no qual é possível observar os resultados intermediários e 
+A observabilidade pode ser encarada como sendo o grau no qual é possível observar os resultados intermediários e 
 finais dos testes.
 
 Visto isto, percebemos que no projeto em análise, visto que não foram realizados os testes de software usuais, 

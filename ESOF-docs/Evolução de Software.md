@@ -1,8 +1,12 @@
 #**Evolução de Software**
 
-Pretende-se com este relatório a identificação de uma feature que possa/deva ser evoluida no projeto  **[Citra](http://citra-emu.org/)**, bem como a análise das componentes que a implementam. Para complementar o referido, procura-se a evolução dessa funcionalidade de um modo cuidado, isto é, sem quebrar funcionalidades já implementadas. Idealmente deve ser efetuada a submissão de um patch com o trabalho realizado, de modo a verificar a utilidade e qualidade do mesmo.
+**Objetivo:** Pretende-se com este relatório a identificação de uma feature que possa/deva ser evoluida no projeto  **[Citra](http://citra-emu.org/)**, bem como a análise das componentes que a implementam. Para complementar o referido, procura-se a evolução dessa funcionalidade de um modo cuidado, isto é, sem quebrar funcionalidades já implementadas. Idealmente deve ser efetuada a submissão de um patch com o trabalho realizado, de modo a verificar a utilidade e qualidade do mesmo.
+
+No entanto, uma vez que o projeto **[Citra](http://citra-emu.org/)** ainda não está completo e as suas funcionalidades ainda não estão implementadas, isto é, ainda não é possível utilizar o software corretamente, o seguinte relatório tem por base uma teorização acerca das funcionalidades que atualmente se estão a desenvolver.
 
 ##**Identificação da feature que possa ser evoluida**
+
+Sendo que este projeto ainda se encontra em desenvolvimento, existe uma grande quantidade de features que ainda não foram implementadas, todavia, estas requerem um suporte de software e hardware que ainda não se encontra disponivel. Após uma análise extensa a possíveis funcionalidades novas, e tendo em conta as restrições impostas pelos colaboradores ("don’t start working on the things mentioned below without prior communication"), optou-se por desenvolver uma feature capaz de ativar ou desativar o audio do jogo que o programa **[Citra](http://citra-emu.org/)** executa. Efetivamente, espera-se que seja possível a implementação de uma nova feature na janela do citra-qt, como especificado na seguinte imagem:
 
 ##**Identificação das componentes que implementam essa feature**
 

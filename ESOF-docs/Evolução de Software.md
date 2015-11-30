@@ -6,10 +6,10 @@ No entanto, uma vez que o projeto **[Citra](http://citra-emu.org/)** ainda não 
 
 ##**Identificação da feature que possa ser evoluida**
 
-Sendo que este projeto ainda se encontra em desenvolvimento, existe uma grande quantidade de features que ainda não foram implementadas, todavia, estas requerem um suporte de software e hardware que ainda não se encontra disponivel. Após uma análise extensa a possíveis funcionalidades novas, e tendo em conta as restrições impostas pelos colaboradores ("don’t start working on the things mentioned below without prior communication"), optou-se por desenvolver uma feature capaz de ativar ou desativar o audio do jogo que o programa **[Citra](http://citra-emu.org/)** executa. Efetivamente, espera-se que seja possível a implementação de uma nova feature na janela do citra-qt, como especificado na seguinte imagem:
+Sendo que este projeto ainda se encontra em desenvolvimento, existe uma grande quantidade de features que ainda não foram implementadas, todavia, estas requerem um suporte de software e hardware que ainda não se encontra disponivel. Após uma análise extensa a possíveis funcionalidades novas, e tendo em conta as restrições impostas pelos colaboradores ("don’t start working on the things mentioned below without prior communication"), optou-se por desenvolver uma feature capaz de completar a funcionalidade About Citra como demonstrado na seguinte imagem:
 
 <br>
-![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/audio.jpg)
+![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/about.png)
 <br>
 
 ##**Identificação das componentes que implementam essa feature**

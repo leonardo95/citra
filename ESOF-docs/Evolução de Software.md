@@ -12,6 +12,8 @@ Sendo que este projeto ainda se encontra em desenvolvimento, existe uma grande q
 ![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/about.png)
 <br>
 
+Objetivamente, será implementada uma nova janela com um resumo da aplicação **[Citra](http://citra-emu.org/)** que irá conter um link remetendo para o site da própria aplicação.
+
 ##**Identificação das componentes que implementam essa feature**
 
 ##**Evolução da feature**

@@ -22,7 +22,7 @@ Como referido anteriormente, pretende-se a adição de uma janela "About" no pro
 
 
 										Citra
-							 	Nintendo 3DS emulator
+							 	 Nintendo 3DS emulator
 								open source development
 							Visit us at: http://citra-emu.org/ 
 

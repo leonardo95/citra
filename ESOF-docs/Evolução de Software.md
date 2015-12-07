@@ -21,7 +21,7 @@ Objetivamente, será implementada uma nova janela com um resumo da aplicação *
 Como referido anteriormente, pretende-se a adição de uma janela "About" no programa Citra contendo o seguinte texto:
 
 
-										Citra
+										  Citra
 							 	 Nintendo 3DS emulator
 								open source development
 							Visit us at: http://citra-emu.org/ 

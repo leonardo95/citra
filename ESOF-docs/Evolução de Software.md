@@ -1,4 +1,4 @@
-#**Evolução de Software**
+﻿#**Evolução de Software**
 
 **Objetivo:** Pretende-se com este relatório a identificação de uma feature que possa/deva ser evoluida no projeto  **[Citra](http://citra-emu.org/)**, bem como a análise das componentes que a implementam. Para complementar o referido, procura-se a evolução dessa funcionalidade de um modo cuidado, isto é, sem quebrar funcionalidades já implementadas. Idealmente deve ser efetuada a submissão de um patch com o trabalho realizado, de modo a verificar a utilidade e qualidade do mesmo.
 
@@ -28,3 +28,9 @@ Como referido anteriormente, pretende-se a adição de uma janela "About" no pro
 
 
 ##**Submissão do patch**
+
+O grupo tinha como objetivo implementar a feature referida no ponto anterior no menu do citra, no entanto, devido a problemas em correr o projeto em Windows com recurso á
+ferramenta Visual Studio, não foi possível terminar a sua inclusão no projeto.
+
+Perante este problema, o grupo tentou estabelecer contacto com os contribuidores através do canal **[Citra Free Node Channel](http://webchat.freenode.net/?channels=citra)** e através de emails.
+Não obtendo resposta, tentamos fazer build no Ubuntu mas ,mais uma vez, sem sucesso 

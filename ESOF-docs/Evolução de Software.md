@@ -48,3 +48,8 @@ ferramenta Visual Studio, não foi possível terminar a sua inclusão no projeto
 
 Perante este problema, o grupo tentou estabelecer contacto com os contribuidores através do canal **[Citra Free Node Channel](http://webchat.freenode.net/?channels=citra)** e através de emails.
 Não obtendo resposta, tentamos fazer build no Ubuntu mas ,mais uma vez, sem sucesso 
+
+
+##**Análise Crítica**
+
+Apesar de à primeira análise esta feature poder parecer relativamente simples sofreu agravantes que elevaram o seu grau de dificuldade significativamente. Efectivamente, é da nossa opinião que apesar do facto de estar ainda numa fase inicial de desenvolvimento, poderia apresentar uma melhor organização e estrutura a nivel de código. Para além disso, o que tornou esta feature virtualmente impossível de implementar foi a falta de uma versão estável em que o código adicional pudesse ser devidamente testado.

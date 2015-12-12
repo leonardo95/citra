@@ -173,6 +173,7 @@ GMainWindow::GMainWindow() : emu_thread(nullptr)
     connect(ui.action_Start, SIGNAL(triggered()), this, SLOT(OnStartGame()));
     connect(ui.action_Pause, SIGNAL(triggered()), this, SLOT(OnPauseGame()));
     connect(ui.action_Stop, SIGNAL(triggered()), this, SLOT(OnStopGame()));
+    connect(ui.action_About, SIGNAL(triggered()), this, SLOT(OnAbout()));  // FOI ADICIONADO ESTE
     connect(ui.action_Use_Hardware_Renderer, SIGNAL(triggered(bool)), this, SLOT(SetHardwareRendererEnabled(bool)));
     connect(ui.action_Use_Shader_JIT, SIGNAL(triggered(bool)), this, SLOT(SetShaderJITEnabled(bool)));
     connect(ui.action_Single_Window_Mode, SIGNAL(triggered(bool)), this, SLOT(ToggleWindowMode()));
@@ -484,6 +485,12 @@ void GMainWindow::ToggleWindowMode() {
 
 void GMainWindow::OnConfigure() {
     //GControllerConfigDialog* dialog = new GControllerConfigDialog(controller_ports, this);
+}
+
+void GMainWindow::OnAbout(){
+
+    //Metes aqui o código para aparecer a caixa de texto, apesar que acho que eles devem ter algo mas não consegui encontrar.
+
 }
 
 void GMainWindow::closeEvent(QCloseEvent* event) {

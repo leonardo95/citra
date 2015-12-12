@@ -16,6 +16,20 @@ Objetivamente, será implementada uma nova janela com um resumo da aplicação *
 
 ##**Identificação das componentes que implementam essa feature**
 
+Para a impementação desta feature foi necessário alterar o ficheiro [main.cpp](https://github.com/leonardo95/citra/blob/master/src/citra_qt/main.cpp), tal como o ficheiro [main.h](https://github.com/leonardo95/citra/blob/master/src/citra_qt/main.h).
+
+<br>
+![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/setup_connections.png)
+<br>
+
+A abordagem para manter os padrões de estrutura do trabalho já realizado foi de adicionar no main.cpp uma connection entre um sinal, que é enviado ao existir um certo evento dentro da janela (neste caso um clique do rato), e um SLOT que será, basicamente, a função a chamar para resolver o sinal.
+
+<br>
+![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/slots.png)
+<br>
+
+Tivemos de adicionar, também o slot necessário OnAbout().
+
 ##**Evolução da feature**
 
 Como referido anteriormente, pretende-se a adição de uma janela "About" no programa Citra contendo o seguinte texto:

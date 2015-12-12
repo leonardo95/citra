@@ -1,132 +1,280 @@
-//https://www.youtube.com/watch?v=4QoQZ0trJ1s
-//https://www.youtube.com/watch?v=NZkpp-a-tYA
-
-
 #include <windows.h>
+#include <iostream>
+#include "MMSystem.h"
 
+using namespace std;
 
-#define ID_BUTTON 1
-// Declare Windows Procedure
-LRESULT CALLBACK WindowProcedure(HWND, UINT, WPARAM, LPARAM);
-
-// The main window class name
-char szClassName[ ] = "WindowsApp";
-
-// The main window class name
-char szTitle[ ] = "About";
-
-int WINAPI WinMain(HINSTANCE hThisInstance,
-                   HINSTANCE hPrevInstance,
-                   LPSTR lpszArgument,
-                   int nFunsterStill)
-{
-	HWND hwnd;
-	MSG messages;
-    WNDCLASSEX wincl;		//wcex Data structure foe the windows class
-
-    //Window structure
-    wincl.hInstance = hThisInstance;
-    wincl.lpszClassName = szClassName;
-    wincl.lpfnWndProc = WindowProcedure;
-    wincl.style = CS_DBLCLKS; 			//wincl.style = CS_HREDRAW | CS_VREDRAW;
-    wincl.cbSize = sizeof(WNDCLASSEX);
-
-    //Use default icon and mouse-pointer
-    wincl.hIcon = LoadIcon(NULL, IDI_APPLICATION);
-	wincl.hIconSm = LoadIcon(NULL, IDI_APPLICATION);
-    wincl.hCursor = LoadCursor(NULL, IDC_ARROW);
-    wincl.lpszMenuName = NULL;
-	wincl.cbClsExtra     = 0;
-    wincl.cbWndExtra     = 0;
-    
-    //Windows default background of the window
-    wincl.hbrBackground  = GetSysColorBrush(COLOR_3DFACE);
-
-    if (!RegisterClassEx(&wincl))
-    {
-        return 0;
-    }
-
-
-    HWND hWnd = CreateWindow(
-        0,
-        szClassName,
-        szTitle,
-        WS_SYSMENU,		//WS_OVERLAPPEDWINDOW,
-        CW_USEDEFAULT, 
-        CW_USEDEFAULT,
-        544,	//500
-        375,	//100
-        HWND_DESKTOP,
-        NULL,
-        hThisInstance,
-        NULL
-    );
-
-    // Make the window visible
-    // hWnd: the value returned from CreateWindow
-    // nFunsterStill: the fourth parameter from WinMain
-    ShowWindow(hWnd, nFunsterStill);
-    
-	//UpdateWindow(hWnd);
-
-    while (GetMessage(&messages, NULL, 0, 0))
-    {
-        TranslateMessage(&messages);	//Translate virtual-key messages into character messages
-        DispatchMessage(&messages);		//Send message to WindowProcedure
-    }
-
-    return messages.wParam;
+/* This is where all the input to the window goes to */
+LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) {
+	switch(Message) {
+		
+		case WM_CREATE:{
+			HMENU hMenubar = CreateMenu();
+            HMENU hFile = CreateMenu();
+			HMENU hEmulation = CreateMenu();
+			HMENU hView = CreateMenu();
+			HMENU hHelp = CreateMenu();
+            HMENU hSound = CreateMenu();
+            
+            AppendMenu(hMenubar, MF_POPUP /*style*/, (UINT_PTR) hFile /* id of the menu item */, "File");
+            AppendMenu(hMenubar, MF_POPUP /*style*/, (UINT_PTR) hEmulation /* id of the menu item */, "Emulation");
+            AppendMenu(hMenubar, MF_POPUP /*style*/, (UINT_PTR) hView /* id of the menu item */, "View");
+            AppendMenu(hMenubar, MF_POPUP /*style*/, (UINT_PTR) hSound /* id of the menu item */, "Sound");
+            AppendMenu(hMenubar, MF_POPUP /*style*/, (UINT_PTR) hHelp /* id of the menu item */, "Help");
+			
+			AppendMenu(hHelp, MF_STRING, 1 , "About Citra");
+			
+            AppendMenu(hSound, MF_STRING, 2 , "Sound ON");
+			AppendMenu(hSound, MF_STRING, 3 , "Sound OFF");
+			AppendMenu(hSound, MF_STRING, 4 , "Sound Settings");
+			
+			
+            SetMenu(hwnd, hMenubar);
+			break;
+		}
+		
+		case WM_COMMAND: {
+			
+			bool music = true;
+			
+			if(LOWORD(wParam) == /*ID_BUTTON*/ 1)
+			{
+				const char *text =
+  						"Citra\n"
+						"Nintendo 3DS emulator\n"
+						"open source development\n" 
+						"Visit us at: http://citra-emu.org/";
+				MessageBox(hwnd, text, "About Citra", MB_OK | MB_ICONINFORMATION);
+			}
+			
+			if(LOWORD(wParam) == 2)
+			{
+				/*if(music){
+					PlaySound(TEXT("music.wav"), NULL,SND_SYNC | SND_FILENAME | SND_LOOP);
+				}*/
+					
+				//Super Mario song introduction
+				Beep (330,100);Sleep(100);
+		        Beep (330,100);Sleep(200);
+		        Beep (330,100);Sleep(200);
+		        Beep (262,100);Sleep(100);
+		        Beep (330,100);Sleep(200);
+		        Beep (392,100);Sleep(500);
+		        Beep (196,100);Sleep(500);
+			        
+				if(music)
+				{	
+					//Super Mario Song
+					
+					Beep (262,300);Sleep(200);
+			        Beep (196,300);Sleep(200);
+			        Beep (164,300);Sleep(100);
+			        Beep (220,300);Sleep(100);
+			        Beep (246,100);Sleep(200);
+			        Beep (233,200);
+		
+					Beep (220,100);Sleep(200);
+			        Beep (196,100);Sleep(100);
+			        Beep (330,100);Sleep(100);
+			        Beep (392,100);Sleep(100);
+			        Beep (440,100);Sleep(200);
+			        Beep (349,100);Sleep(100);
+			        Beep (392,100);Sleep(200);
+			        Beep (330,100);Sleep(200);
+			        Beep (262,100);Sleep(100);
+			        Beep (294,100);Sleep(100);
+			        Beep (247,100);Sleep(350);
+			        Beep (262,300);Sleep(200);
+			        Beep (196,300);Sleep(200);
+			        Beep (164,300);Sleep(200);
+			        Beep (220,300);Sleep(100);
+			        Beep (246,100);Sleep(200);
+			        Beep (233,200);
+					
+					Beep (220,100);Sleep(200);
+			        Beep (196,100);Sleep(100);
+			        Beep (330,100);Sleep(100);
+			        Beep (392,100);Sleep(100);
+			        Beep (440,100);Sleep(200);
+			        Beep (349,100);Sleep(100);
+			        Beep (392,100);Sleep(200);
+			        Beep (330,100);Sleep(200);
+			        Beep (262,100);Sleep(100);
+			        Beep (294,100);Sleep(100);
+			        Beep (247,100);Sleep(1000);
+			        
+			        
+			        Beep (392,100);Sleep(100);
+			        Beep (370,100);Sleep(100);
+			        Beep (349,100);Sleep(100);
+			        Beep (311,100);Sleep(200);
+			        Beep (330,100);Sleep(200);
+			        Beep (207,100);Sleep(100);
+			        Beep (220,100);Sleep(100);
+			        Beep (262,100);Sleep(200);
+			        Beep (220,100);Sleep(100);
+			        Beep (262,100);Sleep(100);
+			        Beep (294,100);Sleep(350);
+			        Beep (392,100);Sleep(100);
+			        Beep (370,100);Sleep(100);
+			        Beep (349,100);Sleep(100);
+			        Beep (311,100);Sleep(200);
+			        Beep (330,100);Sleep(200);
+			        Beep (523,100);Sleep(200);
+			        Beep (523,100);Sleep(100);
+			        Beep (523,100);Sleep(1100);
+			        Beep (392,100);Sleep(100);
+			        Beep (370,100);Sleep(100);
+			        Beep (349,100);Sleep(100);
+			        Beep (311,100);Sleep(200);
+			        Beep (330,100);Sleep(200);
+			        Beep (207,100);Sleep(100);
+			        Beep (220,100);Sleep(100);
+			        Beep (262,100);Sleep(200);
+			        Beep (220,100);Sleep(100);
+			        Beep (262,100);Sleep(100);
+			        Beep (294,100);Sleep(350);
+			        Beep (311,300);Sleep(200);
+			        Beep (296,300);Sleep(200);
+			        Beep (262,300);Sleep(1300);
+			        Beep (262,100);Sleep(100);
+			        Beep (262,100);Sleep(200);
+			        Beep (262,100);Sleep(200);
+			        Beep (262,100);Sleep(100);
+			        Beep (294,100);Sleep(200);
+			        Beep (330,200);Sleep(50);
+			        Beep (262,200);Sleep(50);
+			        Beep (220,200);Sleep(50);
+			        Beep (196,100);Sleep(500);
+			        Beep (262,100);Sleep(100);
+			        Beep (262,100);Sleep(200);
+			        Beep (262,100);Sleep(200);
+			        Beep (262,100);Sleep(100);
+			        Beep (294,100);Sleep(100);
+			        Beep (330,100);Sleep(500);
+			        Beep (440,100);Sleep(200);
+			        Beep (392,100);Sleep(200);
+			        Beep (262,100);Sleep(100);
+			        Beep (262,100);Sleep(200);
+			        Beep (262,100);Sleep(200);
+			        Beep (262,100);Sleep(100);
+			        Beep (294,100);Sleep(200);
+			        Beep (330,200);Sleep(50);
+			        Beep (262,200);Sleep(50);
+			        Beep (220,200);Sleep(50);
+			        Beep (196,100);Sleep(500);
+			        
+			        Beep (330,100);Sleep(100);
+			        Beep (330,100);Sleep(200);
+			        Beep (330,100);Sleep(200);
+			        Beep (262,100);Sleep(100);
+			        Beep (330,100);Sleep(200);
+			        Beep (392,100);Sleep(500);
+			        Beep (196,100);Sleep(500);
+			        Beep (196,100);Sleep(100);
+			        Beep (262,100);Sleep(100);
+			        Beep (330,100);Sleep(100);
+			        Beep (392,100);Sleep(100);
+			        Beep (523,100);Sleep(100);
+			        Beep (660,100);Sleep(100);
+			        Beep (784,100);Sleep(450);
+			        Beep (660,100);Sleep(450);
+			        Beep (207,100);Sleep(100);
+			        Beep (262,100);Sleep(100);
+			        Beep (311,100);Sleep(100);
+			        Beep (415,100);Sleep(100);
+			        Beep (523,100);Sleep(100);
+			        Beep (622,100);Sleep(100);
+			        Beep (830,100);Sleep(450);
+			        Beep (622,100);Sleep(450);
+			        Beep (233,100);Sleep(100);
+			        Beep (294,100);Sleep(100);
+			        Beep (349,100);Sleep(100);
+			        Beep (466,100);Sleep(100);
+			        Beep (587,100);Sleep(100);
+			        Beep (698,100);Sleep(100);
+			        Beep (932,100);Sleep(450);
+			        Beep (932,100);Sleep(100);
+			        Beep (932,100);Sleep(100);
+			        Beep (932,100);Sleep(100);
+			        Beep (1046,675);
+					
+			    }
+						
+			}
+			
+			if(LOWORD(wParam) == 3)
+			{
+				music = false;
+			}
+			
+			break;
+		}
+		
+		
+		/* trap the WM_CLOSE (clicking X) message, and actually tell the window to close */
+		case WM_CLOSE: {
+			DestroyWindow(hwnd);
+			break;
+		}
+		
+		/* Upon destruction, tell the main thread to stop */
+		case WM_DESTROY: {
+			PostQuitMessage(0);
+			break;
+		}
+		
+		/* All other messages (a lot of them) are processed using default procedures */
+		default:
+			return DefWindowProc(hwnd, Message, wParam, lParam);
+	}
+	return 0;
 }
 
-//  Function WndProc(HWND, UINT, WPARAM, LPARAM)
-//  Processes messages for the main window.
-LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
-{
-    switch (message)
-    {
-    	case WM_CREATE:
-            
-            HMENU hMenubar = CreateMenu();
-            HMENU hFile = CreateMenu();
-            HMENU hOptions = CreateMenu();
-            
-            AppendMenu(hMenubar, MF_POPUP /*style*/, (UINT_PTR) hFile /* id of the menu item --> to not interact with the menu*/, "File");
+/* The 'main' function of Win32 GUI programs: this is where execution starts */
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
+	WNDCLASSEX wc; /* A properties struct of our window */
+	HWND hwnd; /* A 'HANDLE', hence the H, or a pointer to our window */
+	MSG Msg; /* A temporary location for all messages */
 
-            AppendMenu(hFile, MF_STRING, NULL , "Exit");
+	/* zero out the struct and set the stuff we want to modify */
+	memset(&wc,0,sizeof(wc));
+	wc.cbSize		 = sizeof(WNDCLASSEX);
+	wc.lpfnWndProc	 = WndProc; /* This is where we will send messages to */
+	wc.hInstance	 = hInstance;
+	wc.hCursor		 = LoadCursor(NULL, IDC_ARROW);
+	
+	/* White, COLOR_WINDOW is just a #define for a system color, try Ctrl+Clicking it */
+	wc.hbrBackground = (HBRUSH)(COLOR_WINDOW+1);
+	wc.lpszClassName = "WindowClass";
+	wc.hIcon		 = LoadIcon(NULL, IDI_APPLICATION); /* Load a standard icon */
+	wc.hIconSm		 = LoadIcon(NULL, IDI_APPLICATION);
 
+	if(!RegisterClassEx(&wc)) {
+		MessageBox(NULL, "Window Registration Failed!","Error!",MB_ICONEXCLAMATION|MB_OK);
+		return 0;
+	}
 
-            SetMenu(hwnd, hMenubar);
-            /*
-       		hButton = CreateWindow(TEXT("button"),TEXT("About"),
-                WS_VISIBLE | WS_CHILD,
-                10,		//X position of the button 
-                10, 	//Y position of the button
-                80, 	//width of the button
-                25,		//weight of the button
-                hWnd, (HMENU) ID_BUTTON, NULL, NULL
-                );*/
-      	    break;
+	hwnd = CreateWindowEx(WS_EX_CLIENTEDGE,"WindowClass","Citra",WS_VISIBLE|WS_OVERLAPPEDWINDOW,
+		CW_USEDEFAULT, /* x */
+		CW_USEDEFAULT, /* y */
+		640, /* width */
+		480, /* height */
+		NULL,NULL,hInstance,NULL);
 
-		case WM_COMMAND:
+	if(hwnd == NULL) {
+		MessageBox(NULL, "Window Creation Failed!","Error!",MB_ICONEXCLAMATION|MB_OK);
+		return 0;
+	}
 
-			if(LOWORD(wParam) == /*ID_BUTTON*/ ((UINT_PTR) hFile))
-			{
-				MessageBox(hWnd, " Citra \n 
-					Nintendo 3DS emulator \n 
-					open source development \n 
-					Visit us at: http://citra-emu.org/ ", 
-                    "About Citra", MB_OK | MB_ICONINFORMATION);
-			}
-		    break;
-		
-        case WM_DESTROY:
-            PostQuitMessage(0);
-            break;
-
-        default:
-            return DefWindowProc(hWnd, message, wParam, lParam);
-		}
-
-    return 1;
+	/*
+		This is the heart of our program where all input is processed and 
+		sent to WndProc. Note that GetMessage blocks code flow until it receives something, so
+		this loop will not produre unreasonably CPU usage
+	*/
+	while(GetMessage(&Msg, NULL, 0, 0) > 0) { /* If no error is received... */
+		TranslateMessage(&Msg); /* Translate keycodes to chars if present */
+		DispatchMessage(&Msg); /* Send it to WndProc */
+	}
+	return Msg.wParam;
 }

@@ -22,7 +22,7 @@ Por outro lado, de uma forma não envolvida no projeto visto que não se consegu
 <br>
 
 Todo o código necessário para correr uma janela do windows com as funcionalidades implementadas encontra-se na pasta ESOF-docs (mesmo diretório deste relatório) e designa-se por "window.cpp" embora também tenha sido adicionado à função adicionada ao projeto -> void onAboutSound().
-Para o sistema reproduzir uma música que o utilizador pretenda aquando do acionamento do botão "Sound ON", basta comentar todo o código relativo à reprodução de "beeps", ou seja, comentar o código desde a linha 57 até à linha 202 no ficheiro window.cpp e descomentar das linha 52 a 54 do mesmo ficheiro. De notar que também será necessário adicionar ao linker do projeto a biblioteca "-lwinmm". Na ferramenta utilizada, Dev-C++, deve-se ir a project -> preject options -> parameters -> linker e adicionar o texto especificado anteriormente. Ainda será necessário conter a música que se pretende reproduzir no diretório onde o projeto está a correr, sendo que o nome da mesma terá de ser "music.wav". A reprodução de uma música efetua-se em segundo plano enquanto que a funcionalidade de beeps só é possível correr em primeiro plano.
+Para o sistema reproduzir uma música que o utilizador pretenda aquando do acionamento do botão "Sound ON", basta comentar todo o código relativo à reprodução de "beeps", ou seja, comentar o código desde a linha 57 até à linha 202 no ficheiro window.cpp e descomentar das linha 52 a 54 do mesmo ficheiro. De notar que também será necessário adicionar ao linker do projeto a biblioteca "-lwinmm". Na ferramenta utilizada, Dev-C++, deve-se ir a project -> project options -> parameters -> linker e adicionar a biblioteca especificada anteriormente. Ainda será necessário conter a música que se pretende reproduzir no diretório onde o projeto está a correr, sendo que o nome da mesma terá de ser "music.wav". A reprodução de uma música efetua-se em segundo plano enquanto que a funcionalidade de beeps só é possível correr em primeiro plano.
 
 ##**Identificação das componentes que implementam essa feature**
 
@@ -50,6 +50,11 @@ Como referido anteriormente, pretende-se a adição de uma janela "About" no pro
 								open source development
 							Visit us at: http://citra-emu.org/ 
 
+A informação que se pretendia mostrar está representada na imagem apresentada em seguida.
+
+<br>
+![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/about_information.png)
+<br>
 
 ##**Submissão do patch**
 

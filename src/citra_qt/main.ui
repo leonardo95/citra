@@ -85,6 +85,14 @@
     <addaction name="actionDisplay_widget_title_bars"/>
     <addaction name="action_Hotkeys"/>
    </widget>
+   <widget class="QMenu" name="menu_Sound">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="action_Sound_On"/>
+    <addaction name="action_Sound_Off"/>
+    <addaction name="action_Sound_Settings"/>
+   </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">
      <string>&amp;Help</string>

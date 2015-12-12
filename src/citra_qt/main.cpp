@@ -173,7 +173,14 @@ GMainWindow::GMainWindow() : emu_thread(nullptr)
     connect(ui.action_Start, SIGNAL(triggered()), this, SLOT(OnStartGame()));
     connect(ui.action_Pause, SIGNAL(triggered()), this, SLOT(OnPauseGame()));
     connect(ui.action_Stop, SIGNAL(triggered()), this, SLOT(OnStopGame()));
-    connect(ui.action_About, SIGNAL(triggered()), this, SLOT(OnAbout()));  // FOI ADICIONADO ESTE
+
+    //ADICIONADOS
+    connect(ui.action_About, SIGNAL(triggered()), this, SLOT(OnAbout()));
+    connect(ui.action_Sound_On, SIGNAL(triggered()), this, SLOT(OnSoundOn()));
+    connect(ui.action_Sound_Off, SIGNAL(triggered()), this, SLOT(OnSoundOff()));
+    connect(ui.action_Sound_Settings, SIGNAL(triggered()), this, SLOT(OnSoundSettings()));
+
+
     connect(ui.action_Use_Hardware_Renderer, SIGNAL(triggered(bool)), this, SLOT(SetHardwareRendererEnabled(bool)));
     connect(ui.action_Use_Shader_JIT, SIGNAL(triggered(bool)), this, SLOT(SetShaderJITEnabled(bool)));
     connect(ui.action_Single_Window_Mode, SIGNAL(triggered(bool)), this, SLOT(ToggleWindowMode()));

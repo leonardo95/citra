@@ -26,19 +26,25 @@ Para o sistema reproduzir uma música que o utilizador pretenda aquando do acion
 
 ##**Identificação das componentes que implementam essa feature**
 
-Para a impementação desta feature foi necessário alterar o ficheiro [main.cpp](https://github.com/leonardo95/citra/blob/master/src/citra_qt/main.cpp), tal como o ficheiro [main.h](https://github.com/leonardo95/citra/blob/master/src/citra_qt/main.h).
+Para a impementação desta feature foi necessário alterar o ficheiro [main.cpp](https://github.com/leonardo95/citra/blob/master/src/citra_qt/main.cpp), o ficheiro [main.h](https://github.com/leonardo95/citra/blob/master/src/citra_qt/main.h) e o ficheiro [main.ui](https://github.com/leonardo95/citra/blob/master/src/citra_qt/main.ui).
+
+<br>
+![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/ui_xml.png)
+<br>
+
+Inicialmente, foi acrescentado ao main.ui a secção do menu de som, com as várias opções, apartir do qual é gerada a janela principal.
 
 <br>
 ![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/setup_connections.png)
 <br>
 
-A abordagem para manter os padrões de estrutura do trabalho já realizado foi de adicionar no main.cpp uma connection entre um sinal, que é enviado ao existir um certo evento dentro da janela (neste caso um clique do rato), e um SLOT que será, basicamente, a função a chamar para resolver o sinal.
+A abordagem para manter os padrões de estrutura do trabalho já realizado foi de adicionar no main.cpp várias connections entre sinais, que são enviados ao existir um certo evento dentro da janela (neste caso um clique do rato), e SLOTs que seram, basicamente, as funções a chamar para resolver os sinais.
 
 <br>
 ![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/slots.png)
 <br>
 
-Tivemos de adicionar, também o slot necessário OnAbout().
+Tivemos de adicionar, também os slot necessário OnAbout(), OnSoundOn(), OnSoundOff() e OnSoundSettings().
 
 ##**Evolução da feature**
 

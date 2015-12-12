@@ -102,7 +102,12 @@ private slots:
     void SetShaderJITEnabled(bool);
     void ToggleWindowMode();
 
-    void OnAbout(); //ADICIONADO
+
+    //ADICIONADO
+    void OnAbout(); 
+    void OnSoundOn();
+    void OnSoundOff();
+    void OnSoundSettings();
 
 private:
     Ui::MainWindow ui;

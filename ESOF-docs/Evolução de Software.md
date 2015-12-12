@@ -2,7 +2,7 @@
 
 **Objetivo:** Pretende-se com este relatório a identificação de uma feature que possa/deva ser evoluida no projeto  **[Citra](http://citra-emu.org/)**, bem como a análise das componentes que a implementam. Para complementar o referido, procura-se a evolução dessa funcionalidade de um modo cuidado, isto é, sem quebrar funcionalidades já implementadas. Idealmente deve ser efetuada a submissão de um patch com o trabalho realizado, de modo a verificar a utilidade e qualidade do mesmo.
 
-No entanto, uma vez que o projeto **[Citra](http://citra-emu.org/)** ainda não está completo e as suas funcionalidades ainda não estão implementadas, isto é, ainda não é possível utilizar o software corretamente, o seguinte relatório tem por base uma teorização acerca das funcionalidades que atualmente se estão a desenvolver.
+No entanto, uma vez que o projeto **[Citra](http://citra-emu.org/)**, projeto acompanhado pelo grupo em virtude da unidade curricular de Engenharia de Software, ainda não está completo e as suas funcionalidades ainda não estão implementadas, isto é, ainda não é possível utilizar o software corretamente, o seguinte relatório tem por base uma teorização acerca das funcionalidades que atualmente se estão a desenvolver.
 
 ##**Identificação da feature que possa ser evoluida**
 
@@ -13,6 +13,16 @@ Sendo que este projeto ainda se encontra em desenvolvimento, existe uma grande q
 <br>
 
 Objetivamente, será implementada uma nova janela com um resumo da aplicação **[Citra](http://citra-emu.org/)** que irá conter um link remetendo para o site da própria aplicação. Importante salientar que a imagem apresentada anteriormente corresponde a um programa presente no link destacado e que este não se encontra atualizado perante o código presente no repositório do Citra, sendo que este último não é capaz de gerar um executável.
+
+
+Por outro lado, de uma forma não envolvida no projeto visto que não se consegue compilar o mesmo, tentamos também desenvolver uma funcionalidade sonora ao projeto, ou seja, adicionou-se um botão em que se consegue ligar ou desligar o som do jogo (visto que não é possível saber se o projeto consegue ou não reproduzir algum tipo de som, o grupo optou por implementar um código que reproduz um som predefinido utilizando "beeps" do Windows, imitando a música de tema do jogo "Super Mario"). 
+
+<br>
+![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/som.png)
+<br>
+
+Todo o código necessário para correr uma janela do windows com as funcionalidades implementadas encontra-se na pasta ESOF-docs (mesmo diretório deste relatório) e designa-se por "window.cpp" embora também tenha sido adicionado à função adicionada ao projeto -> void onAboutSound().
+Para o sistema reproduzir uma música que o utilizador pretenda aquando do acionamento do botão "Sound ON", basta comentar todo o código relativo à reprodução de "beeps", ou seja, comentar o código desde a linha 57 até à linha 202 no ficheiro window.cpp e descomentar das linha 52 a 54 do mesmo ficheiro. De notar que também será necessário adicionar ao linker do projeto a biblioteca "-lwinmm". Na ferramenta utilizada, Dev-C++, deve-se ir a project -> preject options -> parameters -> linker e adicionar o texto especificado anteriormente. Ainda será necessário conter a música que se pretende reproduzir no diretório onde o projeto está a correr, sendo que o nome da mesma terá de ser "music.wav". A reprodução de uma música efetua-se em segundo plano enquanto que a funcionalidade de beeps só é possível correr em primeiro plano.
 
 ##**Identificação das componentes que implementam essa feature**
 

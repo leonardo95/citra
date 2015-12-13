@@ -32,8 +32,6 @@ Por outro lado, de uma forma não envolvida no projeto visto que não se consegu
 <a name="parte2"/>
 ##**Identificação das componentes que implementam essa feature**
 
-Relativamente à implementação de som no Citra, adicionou-se um botão em que se consegue ligar ou desligar o som do jogo (visto que não é possível saber se o projeto consegue ou não reproduzir algum tipo de som, o grupo optou por implementar um código que reproduz um som predefinido utilizando "beeps" do Windows, imitando a música de tema do jogo "Super Mario"). 
-
 Para a impementação desta feature foi necessário alterar o ficheiro [main.cpp](https://github.com/leonardo95/citra/blob/master/src/citra_qt/main.cpp), o ficheiro [main.h](https://github.com/leonardo95/citra/blob/master/src/citra_qt/main.h) e o ficheiro [main.ui](https://github.com/leonardo95/citra/blob/master/src/citra_qt/main.ui).
 
 <br>
@@ -54,8 +52,6 @@ A abordagem para manter os padrões de estrutura do trabalho já realizado foi d
 
 Tivemos de adicionar, também os slot necessário OnAbout(), OnSoundOn(), OnSoundOff() e OnSoundSettings().
 
-Para o sistema reproduzir uma música que o utilizador pretenda aquando do acionamento do botão "Sound ON", basta comentar todo o código relativo à reprodução de "beeps", ou seja, comentar o código desde a linha 57 até à linha 202 no ficheiro window.cpp e descomentar das linha 52 a 54 do mesmo ficheiro. De notar que também será necessário adicionar ao linker do projeto a biblioteca "-lwinmm". Na ferramenta utilizada, Dev-C++, deve-se ir a project -> project options -> parameters -> linker e adicionar a biblioteca especificada anteriormente. Ainda será necessário conter a música que se pretende reproduzir no diretório onde o projeto está a correr, sendo que o nome da mesma terá de ser "music.wav". A reprodução de uma música efetua-se em segundo plano enquanto que a funcionalidade de beeps só é possível correr em primeiro plano.
-
 
 <a name="parte3"/>
 ##**Evolução da feature**
@@ -74,6 +70,9 @@ A informação que se pretendia mostrar está representada na imagem apresentada
 ![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/about_information.png)
 <br>
 
+Relativamente à implementação de som no Citra, adicionou-se um botão em que se consegue ligar ou desligar o som do jogo (visto que não é possível saber se o projeto consegue ou não reproduzir algum tipo de som, o grupo optou por implementar um código que reproduz um som predefinido utilizando "beeps" do Windows, imitando a música de tema do jogo "Super Mario"). 
+<br>
+Para o sistema reproduzir uma música que o utilizador pretenda aquando do acionamento do botão "Sound ON", basta comentar todo o código relativo à reprodução de "beeps", ou seja, comentar o código desde a linha 57 até à linha 202 no ficheiro window.cpp e descomentar das linha 52 a 54 do mesmo ficheiro. De notar que também será necessário adicionar ao linker do projeto a biblioteca "-lwinmm". Na ferramenta utilizada, Dev-C++, deve-se ir a project -> project options -> parameters -> linker e adicionar a biblioteca especificada anteriormente. Ainda será necessário conter a música que se pretende reproduzir no diretório onde o projeto está a correr, sendo que o nome da mesma terá de ser "music.wav". A reprodução de uma música efetua-se em segundo plano enquanto que a funcionalidade de beeps só é possível correr em primeiro plano.
 
 <a name="parte4"/>
 ##**Submissão do patch**

@@ -26,7 +26,7 @@ Por outro lado, de uma forma não envolvida no projeto visto que não se consegu
 ![Alt text](https://raw.githubusercontent.com/leonardo95/citra/master/ESOF-docs/Resources/som.png)
 <br>
 
-Todo o código necessário para correr uma janela do windows com as funcionalidades implementadas encontra-se na pasta ESOF-docs (mesmo diretório deste relatório) e designa-se por "window.cpp" embora também tenha sido adicionado à função adicionada ao projeto -> void onAboutSound().
+ > Todo o código necessário para correr uma janela do windows com as funcionalidades implementadas encontra-se na pasta ESOF-docs (mesmo diretório deste relatório) e designa-se por "window.cpp" embora também tenha sido adicionado à função adicionada ao projeto -> void onAboutSound().
 
 
 <a name="parte2"/>
